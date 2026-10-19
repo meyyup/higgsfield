@@ -1,0 +1,2 @@
+[2026-10-19T22:14:16] POST https://api.higgsfield.ai/alibaba/qwen-image-3/text-to-image name=kadraj_ref out=out/adaylar/kadraj_ref_A.png params={"resolution": "2k", "aspect_ratio": "16:9", "seed": 1101}
+[2026-10-19T22:14:16] POST https://api.higgsfield.ai/alibaba/qwen-image-3/text-to-image name=kadraj_ref out=out/adaylar/kadraj_ref_B.png params={"resolution": "2k", "aspect_ratio": "16:9", "seed": 2202}
