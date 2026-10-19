@@ -1,0 +1,7 @@
+1
+00:00:00,500 --> 00:00:03,500
+Bir derece, kimse fark etmez.
+
+2
+00:00:21,000 --> 00:00:26,000
+Hiçbir şey olmamıştı. Sadece ben görmüştüm.

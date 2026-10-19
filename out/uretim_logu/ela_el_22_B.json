@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:42:13",
+  "bitis": "2026-10-19T22:42:55",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Edit the reference image. Keep everything exactly identical: the hand, the mustard-yellow chunky knit sweater sleeve, the finger position, the round thermostat, the wall, the window, the light and framing. Only change: the thermostat display now shows the large white number \"22\".\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/ela_el_22.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 2202,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/3d5d5510-a80d-4052-90ea-3ca4b05ad540.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/ela_el_24.png"
+    ]
+  },
+  "request_id": "590a4362-edb2-408f-8a21-ffb956a5da87",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "590a4362-edb2-408f-8a21-ffb956a5da87",
+    "status_url": "https://api.higgsfield.ai/requests/590a4362-edb2-408f-8a21-ffb956a5da87/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/590a4362-edb2-408f-8a21-ffb956a5da87/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/cb062652-2f44-4d8d-8c7a-b7b4d7e06d36.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/ela_el_22_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/cb062652-2f44-4d8d-8c7a-b7b4d7e06d36.png"
+}

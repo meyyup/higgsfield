@@ -1,2 +1,3 @@
-work/upload_cache.json
+work/*
+!work/.gitkeep
 __pycache__/

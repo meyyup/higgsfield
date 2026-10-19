@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:51:34",
+  "bitis": "2026-10-19T22:55:43",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "The view through the window slowly changes over time. Camera completely static. The wall and the thermostat do not move; the thermostat number stays the same. No camera shake, no zoom.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/klip3_iyi_sarma_A.txt",
+  "parametreler": {
+    "duration": 6,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/028119bb-73c3-49cb-969c-2ea578cfb6b8.png",
+    "end_image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/e19ecf87-b641-40ed-bc83-cda986f2aedc.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/termostat_kis_22.png"
+    ],
+    "end_image_url": [
+      "assets/gorseller/pencere_iyi_2040.png"
+    ]
+  },
+  "request_id": "a51f4001-7f4c-4ace-8d7e-b3b86761434c",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "a51f4001-7f4c-4ace-8d7e-b3b86761434c",
+    "status_url": "https://api.higgsfield.ai/requests/a51f4001-7f4c-4ace-8d7e-b3b86761434c/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/a51f4001-7f4c-4ace-8d7e-b3b86761434c/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/2c1008ab-1364-40d6-af14-19bb67eba2a1.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/klip3_iyi_sarma_A.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/2c1008ab-1364-40d6-af14-19bb67eba2a1.mp4"
+}

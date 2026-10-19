@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:41:21",
+  "bitis": "2026-10-19T22:42:03",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Edit the reference image: keep everything exactly identical (same girl, same mustard-yellow chunky knit sweater, same framing, same light, same head position). Only change: her eyes are gently closed.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/ela_gozler_kapali.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/1f5012ca-c8b5-4ed1-81f3-3388ec7f3f73.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/ela_gozler_acik.png"
+    ]
+  },
+  "request_id": "4675c1a3-93c8-4f83-8b7f-8023308edf79",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "4675c1a3-93c8-4f83-8b7f-8023308edf79",
+    "status_url": "https://api.higgsfield.ai/requests/4675c1a3-93c8-4f83-8b7f-8023308edf79/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/4675c1a3-93c8-4f83-8b7f-8023308edf79/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/b6648d1c-a201-42b0-b772-48a52655e38f.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/ela_gozler_kapali_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/b6648d1c-a201-42b0-b772-48a52655e38f.png"
+}
