@@ -1,0 +1,3 @@
+The view through the window slowly changes over time. Camera completely static. The wall and the thermostat do not move; the thermostat number stays the same. No camera shake, no zoom.
+
+cinematic, photorealistic, warm colors, soft light
