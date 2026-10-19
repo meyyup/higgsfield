@@ -1,0 +1,28 @@
+{
+  "zaman": "2026-10-19T22:20:45",
+  "bitis": "2026-10-19T22:21:48",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Locked-off static shot, eye level, straight-on view of a plain hallway wall. On the left side of the wall: a round, unbranded wall thermostat with a brushed metal bezel and a black display showing one large white number. Immediately to the right of the thermostat, on the same wall: a window. Through the window: a gentle hill, a single tree, and the sea in the distance. No logos, no text other than the thermostat number. 16:9.\n\nNight. The thermostat display shows \"23\". Through the window: a bare leafless tree on a hill with no snow, winter, the sea far away. Dim hallway, cold blue night light coming through the window.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/kadraj_ref.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101
+  },
+  "referans_dosyalar": {},
+  "request_id": "3db05783-4c0b-4150-9d2c-bd046de85288",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "3db05783-4c0b-4150-9d2c-bd046de85288",
+    "status_url": "https://api.higgsfield.ai/requests/3db05783-4c0b-4150-9d2c-bd046de85288/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/3db05783-4c0b-4150-9d2c-bd046de85288/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/d99f3525-311f-4de7-84ac-c7496fae2896.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/kadraj_ref_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/d99f3525-311f-4de7-84ac-c7496fae2896.png"
+}
