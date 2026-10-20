@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Son Damla: müzik ve efektleri numpy ile sentezler (özgün, telifsiz).
 
-Çıktı: assets/ses/sd_muzik.wav (60 sn), assets/ses/sd_efekt.wav (60 sn, zaman çizelgesine yerleşik).
+Çıktı: assets/ses/sd_efekt.wav (60 sn, zaman çizelgesine yerleşik). Müzik artık kütüphaneden (sd_muzik_indir.sh);
+muzik() yalnızca yedek. Eski çıktı: assets/ses/sd_muzik.wav (60 sn, zaman çizelgesine yerleşik).
 Bölümler sd_assemble.sh'deki zaman çizelgesiyle aynıdır.
 """
 import pathlib
@@ -157,6 +158,5 @@ def yaz(path, x, peak=.8):
 
 
 if __name__ == "__main__":
-    yaz(ROOT / "assets/ses/sd_muzik.wav", muzik(), .7)
     yaz(ROOT / "assets/ses/sd_efekt.wav", efekt(), .8)
-    print("assets/ses/sd_muzik.wav, assets/ses/sd_efekt.wav yazıldı")
+    print("assets/ses/sd_efekt.wav yazıldı")

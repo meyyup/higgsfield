@@ -2,7 +2,7 @@
 """Son Damla montajı: klipler → 1920x1080/25fps, çapraz geçiş, yazı katmanı (PIL), ses miksajı.
 
 Çıktı: out/TalentCup-2026_Son_Damla.mp4, out/sd_altyazi.srt. Tekrar çalıştırılabilir.
-Konuşma: assets/ses/sd_s*.m4a (gerçek kayıt) varsa o, yoksa work/tts/sd_s*.mp3 (geçici sentez ses).
+Müzik: assets/ses/kutuphane (scripts/sd_muzik_indir.sh). Konuşma: assets/ses/sd_s*.m4a (gerçek kayıt) varsa o, yoksa work/tts/sd_s*.mp3 (geçici sentez ses).
 """
 import pathlib
 import subprocess
@@ -193,29 +193,59 @@ def srt(altyazi):
     (ROOT / "out" / "sd_altyazi.srt").write_text("\n".join(satirlar), encoding="utf-8")
 
 
+# Müzik kurgusu: (dosya, kaynakta_başla, uzunluk, filmde_başla, kazanç_dB, fade_in, fade_out)
+MUZIK = [
+    ("Heartwarming", 0.0, 6.8, 0.0, 1, 0.0, 0.8),         # K1 sakin giriş
+    ("Volatile_Reaction", 16.5, 14.0, 6.0, -8, 0.6, 0.4),  # K2 yangın, patlama ~19,5. sn'de; yağmurla kesilir
+    ("Lasting_Hope", 0.0, 6.8, 21.5, -1, 0.8, 0.7),        # K3 aydınlanma
+    ("Carefree", 0.0, 32.0, 28.0, 4, 0.3, 4.0),            # K4–K6 neşeli, sonda fade-out
+]
+# Karakter sesleri: (perde çarpanı) — rubberband, formant kaydırmalı (çizgi film tınısı)
+PERDE = {"damla": 1.19, "pit": 1.41}
+
+
 def ses(altyazi):
-    """Konuşma orijinal seviye; müzik konuşma altında −12 dB; efektler; ~−14 LUFS."""
-    args = ["-i", ROOT / "assets/ses/sd_muzik.wav", "-i", ROOT / "assets/ses/sd_efekt.wav"]
-    fc, mix = [], []
+    """Konuşma önde; müzik konuşma altında −12 dB (yumuşak zarf); efektler; ~−14 LUFS."""
+    args, fc, mix = [], [], []
+    for k, (ad, kb, ln, at, db, fi, fo) in enumerate(MUZIK):
+        args += ["-i", ROOT / "assets/ses/kutuphane" / f"{ad}.mp3"]
+        ms = int(at * 1000)
+        fc.append(f"[{k}:a]atrim={kb}:{kb + ln},asetpts=PTS-STARTPTS,aresample=48000,"
+                  f"aformat=channel_layouts=stereo,volume={db}dB,afade=t=in:d={fi or 0.01},"
+                  f"afade=t=out:st={ln - fo}:d={fo},adelay={ms}|{ms}[mz{k}]")
+    n = len(MUZIK)
+    fc.append(f"{''.join(f'[mz{k}]' for k in range(n))}amix=inputs={n}:normalize=0,volume=0.8[muzik]")
+    args += ["-i", ROOT / "assets/ses/sd_efekt.wav"]
+    fc.append(f"[{n}:a]aecho=0.8:0.5:40|70:0.12|0.08,volume=0.75[e]")
     for k, (ad, s, _m) in enumerate(KONUSMA):
         args += ["-i", konusma_dosyasi(ad)]
         ms = int(s * 1000)
-        fc.append(f"[{k + 2}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms}[k{k}]")
+        perde = PERDE["pit" if "pit" in ad else "damla"]
+        fc.append(f"[{n + 1 + k}:a]aresample=48000,highpass=f=110,"
+                  f"rubberband=pitch={perde}:formant=shifted:pitchq=quality,"
+                  f"equalizer=f=3200:t=q:w=1.2:g=3,acompressor=threshold=-20dB:ratio=3:attack=5:release=80,"
+                  f"aecho=0.85:0.35:28|52:0.10|0.06,aformat=channel_layouts=stereo,adelay={ms}|{ms}[k{k}]")
         mix.append(f"[k{k}]")
-    duck = "+".join(f"between(t,{s - .2:.2f},{e + .3:.2f})" for s, e, _ in altyazi)
-    fc.append(f"[0:a]volume='if({duck},0.25,1)':eval=frame,volume=0.55[m]")
-    fc.append("[1:a]volume=0.8[e]")
-    fc.append(f"[m][e]{''.join(mix)}amix=inputs={len(mix) + 2}:normalize=0,"
-              f"loudnorm=I=-14:TP=-1.5:LRA=11,atrim=0:{DUR}[a]")
+    fc.append(f"{''.join(mix)}amix=inputs={len(mix)}:normalize=0,volume=1.6[konusma]")
+    # Ducking: her konuşmada müzik tam −12 dB (×0,251), 0,25 sn yumuşak iniş/çıkış
+    zarf = "+".join(f"clip(min((t-{s - .3:.2f})/0.25,({e + .4:.2f}-t)/0.3),0,1)" for s, e, _ in altyazi)
+    fc.append(f"[muzik]volume='1-0.749*({zarf})':eval=frame[m]")
+    fc.append(f"[m][e][konusma]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,atrim=0:{DUR}[a]")
     out = WORK / "ses.wav"
     ff(*args, "-filter_complex", ";".join(fc), "-map", "[a]", "-ar", 48000, out)
     return out
 
 
 def main():
-    paths = segmentler()
-    video = birlestir(paths)
-    katman, altyazi = katman_video()
+    """--yalniz-ses: görüntü ve yazı katmanı önceki çalıştırmadan alınır, yalnızca ses yeniden kurulur."""
+    import sys
+    yalniz_ses = "--yalniz-ses" in sys.argv and (WORK / "video.mp4").exists() and (WORK / "katman.mov").exists()
+    if yalniz_ses:
+        video, katman = WORK / "video.mp4", WORK / "katman.mov"
+        altyazi = [(s, s + dur(konusma_dosyasi(ad)), m) for ad, s, m in KONUSMA]
+    else:
+        video = birlestir(segmentler())
+        katman, altyazi = katman_video()
     srt(altyazi)
     sesdosya = ses(altyazi)
     ff("-i", video, "-i", katman, "-i", sesdosya, "-filter_complex", "[0:v][1:v]overlay=format=auto[v]",
