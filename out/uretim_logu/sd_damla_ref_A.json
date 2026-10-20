@@ -1,0 +1,28 @@
+{
+  "zaman": "2026-10-20T17:43:25",
+  "bitis": "2026-10-20T17:45:10",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Character design sheet of \"Damla\", a cute raindrop character: a classic teardrop-shaped water droplet, transparent light-blue water with soft refractions and a bright white highlight near the top, big curious friendly eyes, small expressive eyebrows, a small smiling mouth, two tiny thin arms, no legs, no clothes, no accessories. Three views side by side on a plain light grey background: front view smiling, three-quarter view looking determined, front view worried. Same character in all three views, consistent shape, size and color. No text, no logos. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_damla_ref.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101
+  },
+  "referans_dosyalar": {},
+  "request_id": "c05fd1d6-a97a-46f8-bb36-069f2a9c207e",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "c05fd1d6-a97a-46f8-bb36-069f2a9c207e",
+    "status_url": "https://api.higgsfield.ai/requests/c05fd1d6-a97a-46f8-bb36-069f2a9c207e/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/c05fd1d6-a97a-46f8-bb36-069f2a9c207e/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/b9edf06f-1107-449d-82dc-0148a8345d3d.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_damla_ref_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/b9edf06f-1107-449d-82dc-0148a8345d3d.png"
+}

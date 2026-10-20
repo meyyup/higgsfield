@@ -235,3 +235,11 @@ ffmpeg -i work/video_yazili.mp4 -i work/ses_mix.wav -map 0:v -map 1:a -af loudno
 [2026-10-20T04:15:46] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/6144d5f2-4255-4147-a5f0-6787e99958e2.png -> out/adaylar/v2_ana_kadraj_B.png
 [2026-10-20T04:17:08] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/ec648487-6cef-4d2c-a256-a1b88aa3ee67.png -> out/adaylar/v2_ana_kadraj_D.png
 [2026-10-20T04:17:09] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/818710a0-7e39-493d-b839-f0dc76aa0e58.png -> out/adaylar/v2_ana_kadraj_C.png
+[2026-10-20T17:43:25] POST https://api.higgsfield.ai/xai/grok-imagine-image-2.0 name=sd_damla_ref out=out/adaylar/sd_damla_ref_B.png params={"quality": "medium", "resolution": "2k", "aspect_ratio": "16:9"}
+[2026-10-20T17:43:25] POST https://api.higgsfield.ai/xai/grok-imagine-image-2.0 name=sd_orman_ref out=out/adaylar/sd_orman_ref_B.png params={"quality": "medium", "resolution": "2k", "aspect_ratio": "16:9"}
+[2026-10-20T17:43:25] POST https://api.higgsfield.ai/alibaba/qwen-image-3/text-to-image name=sd_orman_ref out=out/adaylar/sd_orman_ref_A.png params={"resolution": "2k", "aspect_ratio": "16:9", "seed": 1101}
+[2026-10-20T17:43:25] POST https://api.higgsfield.ai/alibaba/qwen-image-3/text-to-image name=sd_damla_ref out=out/adaylar/sd_damla_ref_A.png params={"resolution": "2k", "aspect_ratio": "16:9", "seed": 1101}
+[2026-10-20T17:45:11] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/b9edf06f-1107-449d-82dc-0148a8345d3d.png -> out/adaylar/sd_damla_ref_A.png
+[2026-10-20T17:45:11] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/7f44766f-4a07-43a5-a690-c1f5cdd5bcfa.png -> out/adaylar/sd_orman_ref_B.png
+[2026-10-20T17:45:31] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/63710e68-da29-4c5d-8071-31a4b55f5e54.png -> out/adaylar/sd_damla_ref_B.png
+[2026-10-20T17:45:31] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/723da018-4c48-462c-8209-103663dce5c8.png -> out/adaylar/sd_orman_ref_A.png

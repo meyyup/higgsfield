@@ -1,0 +1,28 @@
+{
+  "zaman": "2026-10-20T17:43:25",
+  "bitis": "2026-10-20T17:45:10",
+  "model": "xai/grok-imagine-image-2.0",
+  "prompt": "Wide establishing shot, static camera, slightly elevated view of a pine forest clearing on a hot dry summer afternoon. Dry yellow grass and pine needles on the ground, pine trees around, hazy blue sky with a few white clouds. In the foreground on the dry grass lie several discarded empty glass bottles, one green glass bottle in the center catching the bright sun with a sharp glint. On the far right edge of the clearing, a green unbranded recycling bin for glass. No people, no logos, no readable text. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_orman_ref.txt",
+  "parametreler": {
+    "quality": "medium",
+    "resolution": "2k",
+    "aspect_ratio": "16:9"
+  },
+  "referans_dosyalar": {},
+  "request_id": "01a883c2-1ceb-4a2c-994d-da052a419788",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a883c2-1ceb-4a2c-994d-da052a419788",
+    "status_url": "https://api.higgsfield.ai/requests/01a883c2-1ceb-4a2c-994d-da052a419788/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a883c2-1ceb-4a2c-994d-da052a419788/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/7f44766f-4a07-43a5-a690-c1f5cdd5bcfa.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_orman_ref_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/7f44766f-4a07-43a5-a690-c1f5cdd5bcfa.png"
+}
