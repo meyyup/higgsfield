@@ -1,0 +1,25 @@
+{
+  "endpoint": "/text-to-voice/design",
+  "istek": {
+    "voice_description": "Female voice actor performing a cheerful, brave animated cartoon heroine, a tiny raindrop, in Turkish. Bright, light, high-pitched, warm and expressive, slightly breathless. Clear studio recording.",
+    "text": "Ben Damla. Arkadaşlarımla yangınları söndürmekte çok zorlanıyoruz. Ama pes etmek yok! Cam şişeleri toplayıp geri dönüşüme taşıyacağız."
+  },
+  "adaylar": [
+    {
+      "n": 1,
+      "generated_voice_id": "hryrrAdiU3EBsep7oT08",
+      "dosya": "assets/ses/elevenlabs/aday_damla_1.mp3"
+    },
+    {
+      "n": 2,
+      "generated_voice_id": "8E8NQSNFSIqeRak1uyB4",
+      "dosya": "assets/ses/elevenlabs/aday_damla_2.mp3"
+    },
+    {
+      "n": 3,
+      "generated_voice_id": "lhfFPbkrxr9e3pIqrWW5",
+      "dosya": "assets/ses/elevenlabs/aday_damla_3.mp3"
+    }
+  ],
+  "zaman": "2026-10-20T19:06:15"
+}

@@ -24,12 +24,14 @@ LOG = ROOT / "out" / "uretim_logu"
 TTS_MODEL = "eleven_multilingual_v2"
 
 KARAKTER = {
-    "damla": ("A cheerful, brave little girl around 9 years old, speaking Turkish. Bright, warm, slightly "
-              "breathless and expressive voice, like an animated film heroine. Clear studio recording.",
-              "Ben Damla. Arkadaşlarımla yangınları söndürmekte çok zorlanıyoruz. Ama pes etmek yok!"),
-    "pit": ("A very small, excitable young child around 6 years old, speaking Turkish. High, squeaky, cute and "
-            "emotional voice, a little fast, like a tiny cartoon sidekick. Clear studio recording.",
-            "Ne kadar yağsak da yetmiyor! Ama bak, bu yaz hiç yangın çıkmadı! Yaşasın!"),
+    "damla": ("Female voice actor performing a cheerful, brave animated cartoon heroine, a tiny raindrop, in Turkish. "
+              "Bright, light, high-pitched, warm and expressive, slightly breathless. Clear studio recording.",
+              "Ben Damla. Arkadaşlarımla yangınları söndürmekte çok zorlanıyoruz. Ama pes etmek yok! "
+              "Cam şişeleri toplayıp geri dönüşüme taşıyacağız."),
+    "pit": ("Voice actor performing a tiny, excitable cartoon sidekick, a little raindrop, in Turkish. Very high, "
+            "squeaky, cute and emotional, a little fast and bouncy. Clear studio recording.",
+            "Ne kadar yağsak da yetmiyor! Ama bak, bu yaz hiç yangın çıkmadı! Yaşasın! "
+            "Haydi Damla, bir şişe daha taşıyalım!"),
 }
 REPLIKLER = [
     ("sd_s1_damla", "damla", "Ben Damla. Arkadaşlarımla yangınları söndürmekte çok zorlanıyoruz."),

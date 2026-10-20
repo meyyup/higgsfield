@@ -1,0 +1,36 @@
+{
+  "damla": [
+    {
+      "n": 1,
+      "generated_voice_id": "hryrrAdiU3EBsep7oT08",
+      "dosya": "assets/ses/elevenlabs/aday_damla_1.mp3"
+    },
+    {
+      "n": 2,
+      "generated_voice_id": "8E8NQSNFSIqeRak1uyB4",
+      "dosya": "assets/ses/elevenlabs/aday_damla_2.mp3"
+    },
+    {
+      "n": 3,
+      "generated_voice_id": "lhfFPbkrxr9e3pIqrWW5",
+      "dosya": "assets/ses/elevenlabs/aday_damla_3.mp3"
+    }
+  ],
+  "pit": [
+    {
+      "n": 1,
+      "generated_voice_id": "mG7ozCt8V3yJoZ23Yxeu",
+      "dosya": "assets/ses/elevenlabs/aday_pit_1.mp3"
+    },
+    {
+      "n": 2,
+      "generated_voice_id": "B1Ock3YsfkrScB6xUh5U",
+      "dosya": "assets/ses/elevenlabs/aday_pit_2.mp3"
+    },
+    {
+      "n": 3,
+      "generated_voice_id": "ThmCBgg1XFnyA87QYa27",
+      "dosya": "assets/ses/elevenlabs/aday_pit_3.mp3"
+    }
+  ]
+}

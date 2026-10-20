@@ -1,0 +1,25 @@
+{
+  "endpoint": "/text-to-voice/design",
+  "istek": {
+    "voice_description": "Voice actor performing a tiny, excitable cartoon sidekick, a little raindrop, in Turkish. Very high, squeaky, cute and emotional, a little fast and bouncy. Clear studio recording.",
+    "text": "Ne kadar yağsak da yetmiyor! Ama bak, bu yaz hiç yangın çıkmadı! Yaşasın! Haydi Damla, bir şişe daha taşıyalım!"
+  },
+  "adaylar": [
+    {
+      "n": 1,
+      "generated_voice_id": "mG7ozCt8V3yJoZ23Yxeu",
+      "dosya": "assets/ses/elevenlabs/aday_pit_1.mp3"
+    },
+    {
+      "n": 2,
+      "generated_voice_id": "B1Ock3YsfkrScB6xUh5U",
+      "dosya": "assets/ses/elevenlabs/aday_pit_2.mp3"
+    },
+    {
+      "n": 3,
+      "generated_voice_id": "ThmCBgg1XFnyA87QYa27",
+      "dosya": "assets/ses/elevenlabs/aday_pit_3.mp3"
+    }
+  ],
+  "zaman": "2026-10-20T19:06:20"
+}
