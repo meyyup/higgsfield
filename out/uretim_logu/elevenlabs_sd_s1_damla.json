@@ -1,0 +1,18 @@
+{
+  "endpoint": "/text-to-speech/8E8NQSNFSIqeRak1uyB4",
+  "model": "eleven_multilingual_v2",
+  "karakter": "damla",
+  "istek": {
+    "text": "Ben Damla. Arkadaşlarımla yangınları söndürmekte çok zorlanıyoruz.",
+    "model_id": "eleven_multilingual_v2",
+    "language_code": "tr",
+    "voice_settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true
+    }
+  },
+  "kaydedilen_dosya": "assets/ses/elevenlabs/sd_s1_damla.mp3",
+  "zaman": "2026-10-20T19:11:08"
+}

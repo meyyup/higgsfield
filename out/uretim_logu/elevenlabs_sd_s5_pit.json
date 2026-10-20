@@ -1,0 +1,18 @@
+{
+  "endpoint": "/text-to-speech/mG7ozCt8V3yJoZ23Yxeu",
+  "model": "eleven_multilingual_v2",
+  "karakter": "pit",
+  "istek": {
+    "text": "Bu yaz hiç yangın çıkmadı!",
+    "model_id": "eleven_multilingual_v2",
+    "language_code": "tr",
+    "voice_settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true
+    }
+  },
+  "kaydedilen_dosya": "assets/ses/elevenlabs/sd_s5_pit.mp3",
+  "zaman": "2026-10-20T19:11:13"
+}

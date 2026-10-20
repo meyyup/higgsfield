@@ -1,0 +1,18 @@
+{
+  "endpoint": "/text-to-speech/8E8NQSNFSIqeRak1uyB4",
+  "model": "eleven_multilingual_v2",
+  "karakter": "damla",
+  "istek": {
+    "text": "O yüzden, yangın söndürmediğimiz zamanlarda, cam şişeleri geri dönüşüm kutularına atıyoruz.",
+    "model_id": "eleven_multilingual_v2",
+    "language_code": "tr",
+    "voice_settings": {
+      "stability": 0.4,
+      "similarity_boost": 0.8,
+      "style": 0.45,
+      "use_speaker_boost": true
+    }
+  },
+  "kaydedilen_dosya": "assets/ses/elevenlabs/sd_s4_damla.mp3",
+  "zaman": "2026-10-20T19:11:12"
+}

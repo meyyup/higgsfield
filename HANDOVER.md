@@ -7,7 +7,8 @@ Dal: `claude/peaceful-ride-qr1zgz`. Her şey bu dala push edildi. Yeni oturumda 
 Aktif film: **SON DAMLA**. 60 sn, 3D animasyon. Başrolde bir yağmur damlası: Damla ve arkadaşları yangını söndürmekte zorlanıyor. Sebep ormana atılan cam şişeler, çünkü güneşi mercek gibi topluyorlar. Damlalar şişeleri geri dönüşüme taşıyor ve bir sonraki yaz yangın çıkmıyor.
 - Senaryo: `out/senaryo_son_damla.md`. Repliklerin kesin metni `scripts/sd_montaj.py` → `KONUSMA` listesinde.
 - Final video: `out/TalentCup-2026_Son_Damla.mp4` (1080p, 25 fps, −13,7 LUFS). Küçük kopya: `out/TalentCup-2026_Son_Damla_720p.mp4`. Altyazı: `out/sd_altyazi.srt`.
-- **Eksik olan tek şey: gerçek seslendirme.** Konuşmalar şimdilik edge-tts (tr-TR-EmelNeural) ile, perde kaydırılarak yapıldı. Kullanıcı ElevenLabs aboneliği aldı ve `ELEVENLABS_API_KEY` ortam değişkenini ekledi; bu yüzden yeni oturum açıldı.
+- **Seslendirme tamam (ElevenLabs).** Voice Design adaylarından kullanıcı Damla 2 ve Pıt 1'i seçti (`assets/ses/elevenlabs/sesler.json`). Replikler `eleven_multilingual_v2` ile okundu: 5,2 / 2,0 / 5,1 / 5,7 / 1,6 sn. Montaj yenilendi (60,0 sn, −13,5 LUFS), 720p kopya da güncel. Notlar: Voice Design örnek metni en az 100 karakter olmalı; tarifte çocuk yaşı geçince istek güvenlik filtresine takılıyor, bu yüzden tarif "çizgi film karakteri" diye yazıldı.
+- **Sıradaki iş:** teslim paketi (aşağıda 6. adım) ve Drive linki (7. adım).
 
 `CLAUDE.md` eski ±1°C filminin brifi. Klasör yapısı, loglama ve DUR kuralları Son Damla için de geçerli; içerik ve stil kısmı geçerli değil. ±1°C v2'nin (`prompts/v2_*`) ana kadraj seçimi askıda. Kullanıcı yeni fikre geçti, bu yüzden dokunma.
 

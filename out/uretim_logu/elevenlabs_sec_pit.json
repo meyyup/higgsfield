@@ -1,0 +1,10 @@
+{
+  "endpoint": "/text-to-voice",
+  "istek": {
+    "voice_name": "Son Damla - pit",
+    "voice_description": "Voice actor performing a tiny, excitable cartoon sidekick, a little raindrop, in Turkish. Very high, squeaky, cute and emotional, a little fast and bouncy. Clear studio recording.",
+    "generated_voice_id": "mG7ozCt8V3yJoZ23Yxeu"
+  },
+  "voice_id": "mG7ozCt8V3yJoZ23Yxeu",
+  "zaman": "2026-10-20T19:11:07"
+}
