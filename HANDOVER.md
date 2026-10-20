@@ -8,7 +8,7 @@ Aktif film: **SON DAMLA**. 60 sn, 3D animasyon. Başrolde bir yağmur damlası: 
 - Senaryo: `out/senaryo_son_damla.md`. Repliklerin kesin metni `scripts/sd_montaj.py` → `KONUSMA` listesinde.
 - Final video: `out/TalentCup-2026_Son_Damla.mp4` (1080p, 25 fps, −13,7 LUFS). Küçük kopya: `out/TalentCup-2026_Son_Damla_720p.mp4`. Altyazı: `out/sd_altyazi.srt`.
 - **Seslendirme tamam (ElevenLabs).** Voice Design adaylarından kullanıcı Damla 2 ve Pıt 1'i seçti (`assets/ses/elevenlabs/sesler.json`). Replikler `eleven_multilingual_v2` ile okundu: 5,2 / 2,0 / 5,1 / 5,7 / 1,6 sn. Montaj yenilendi (60,0 sn, −13,5 LUFS), 720p kopya da güncel. Notlar: Voice Design örnek metni en az 100 karakter olmalı; tarifte çocuk yaşı geçince istek güvenlik filtresine takılıyor, bu yüzden tarif "çizgi film karakteri" diye yazıldı.
-- **Sıradaki iş:** teslim paketi hazır; yalnızca zip kaldı (Ad_Soyad + Drive linki bekleniyor, 6. adım).
+- **Teslim paketi tamam:** `out/Mert_Eyyupoglu_5E.zip` (storyboard, kaynak listesi PDF, drive_link.txt). Drive linki `out/drive_link.txt`te.
 
 `CLAUDE.md` eski ±1°C filminin brifi. Klasör yapısı, loglama ve DUR kuralları Son Damla için de geçerli; içerik ve stil kısmı geçerli değil. ±1°C v2'nin (`prompts/v2_*`) ana kadraj seçimi askıda. Kullanıcı yeni fikre geçti, bu yüzden dokunma.
 
