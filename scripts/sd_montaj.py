@@ -70,8 +70,11 @@ def dur(p):
 
 
 def konusma_dosyasi(ad):
-    gercek = ROOT / "assets" / "ses" / f"{ad}.m4a"
-    return gercek if gercek.exists() else ROOT / "work" / "tts" / f"{ad}.mp3"
+    """Öncelik: gerçek kayıt (assets/ses/*.m4a) → ElevenLabs (assets/ses/elevenlabs) → geçici edge-tts (work/tts)."""
+    for p in (ROOT / "assets" / "ses" / f"{ad}.m4a", ROOT / "assets" / "ses" / "elevenlabs" / f"{ad}.mp3"):
+        if p.exists():
+            return p
+    return ROOT / "work" / "tts" / f"{ad}.mp3"
 
 
 def segmentler():
@@ -221,8 +224,10 @@ def ses(altyazi):
         args += ["-i", konusma_dosyasi(ad)]
         ms = int(s * 1000)
         perde = PERDE["pit" if "pit" in ad else "damla"]
-        fc.append(f"[{n + 1 + k}:a]aresample=48000,highpass=f=110,"
-                  f"rubberband=pitch={perde}:formant=shifted:pitchq=quality,"
+        # Perde kaydırma yalnızca geçici sentez seste; ElevenLabs/gerçek kayıt zaten karakter sesi
+        kaydir = (f"rubberband=pitch={perde}:formant=shifted:pitchq=quality,"
+                  if "work/tts" in str(konusma_dosyasi(ad)) else "")
+        fc.append(f"[{n + 1 + k}:a]aresample=48000,highpass=f=110,{kaydir}"
                   f"equalizer=f=3200:t=q:w=1.2:g=3,acompressor=threshold=-20dB:ratio=3:attack=5:release=80,"
                   f"aecho=0.85:0.35:28|52:0.10|0.06,aformat=channel_layouts=stereo,adelay={ms}|{ms}[k{k}]")
         mix.append(f"[k{k}]")
