@@ -1,0 +1,37 @@
+{
+  "zaman": "2026-10-19T22:36:58",
+  "bitis": "2026-10-19T22:37:59",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Image 1 is the hallway wall with the round thermostat; image 2 is the girl Ela (use her mustard-yellow chunky knit sweater only, her face is not visible). Close-up of the same round thermostat from image 1 (brushed metal bezel, black display, white digits) on the same wall, night, cold blue light from the window at the right edge of frame. A child's hand in the sleeve of the mustard-yellow chunky knit sweater enters from the right; index finger rests on the metal bezel dial. The display clearly shows the large white number \"23\". No face, no logos.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/ela_el_23.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 2202,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/79eb4241-f9a0-49a2-8b6a-308128f0fb58.png",
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/90af6f80-8b31-4f25-a9ed-3c6814208b98.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/kadraj_ref.png",
+      "assets/gorseller/ela_ref.png"
+    ]
+  },
+  "request_id": "cffa7296-e9fb-41e9-a83c-bff29231d068",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "cffa7296-e9fb-41e9-a83c-bff29231d068",
+    "status_url": "https://api.higgsfield.ai/requests/cffa7296-e9fb-41e9-a83c-bff29231d068/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/cffa7296-e9fb-41e9-a83c-bff29231d068/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/1fcdfbb8-75d7-4249-a431-7255e9d73d6a.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/ela_el_23_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/1fcdfbb8-75d7-4249-a431-7255e9d73d6a.png"
+}

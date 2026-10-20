@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:46:45",
+  "bitis": "2026-10-19T22:50:52",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "The child's finger turns the thermostat dial slowly clockwise; the display number changes from 23 to 24 and stays readable. Camera static.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/klip5_termostat_cevirme.txt",
+  "parametreler": {
+    "duration": 5,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/54881fba-1b35-4dcf-abbb-0178e9e8215f.png",
+    "end_image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/3d5d5510-a80d-4052-90ea-3ca4b05ad540.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/ela_el_23.png"
+    ],
+    "end_image_url": [
+      "assets/gorseller/ela_el_24.png"
+    ]
+  },
+  "request_id": "c4d4a6df-9e78-437d-92ed-b349ef6e3a17",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "c4d4a6df-9e78-437d-92ed-b349ef6e3a17",
+    "status_url": "https://api.higgsfield.ai/requests/c4d4a6df-9e78-437d-92ed-b349ef6e3a17/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/c4d4a6df-9e78-437d-92ed-b349ef6e3a17/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/f9927283-506d-4391-8fa2-c04e388da3ba.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/klip5_termostat_cevirme.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/f9927283-506d-4391-8fa2-c04e388da3ba.mp4"
+}

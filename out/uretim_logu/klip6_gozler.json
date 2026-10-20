@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:47:47",
+  "bitis": "2026-10-19T22:49:50",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "The girl slowly closes her eyes. Face stays still, no head movement. Camera static.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/klip6_gozler.txt",
+  "parametreler": {
+    "duration": 4,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/a6b0d5f5-58ff-4270-803c-9e29a217ce5c.png",
+    "end_image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/1c654985-7146-43db-aef2-0c044dbf2b82.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/ela_gozler_acik.png"
+    ],
+    "end_image_url": [
+      "assets/gorseller/ela_gozler_kapali.png"
+    ]
+  },
+  "request_id": "5e459081-d70b-41fa-b4e7-4b496376bfbe",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "5e459081-d70b-41fa-b4e7-4b496376bfbe",
+    "status_url": "https://api.higgsfield.ai/requests/5e459081-d70b-41fa-b4e7-4b496376bfbe/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/5e459081-d70b-41fa-b4e7-4b496376bfbe/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/7ba3600e-9403-4d00-8d7b-26e21f2dbbea.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/klip6_gozler.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/7ba3600e-9403-4d00-8d7b-26e21f2dbbea.mp4"
+}

@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:40:08",
+  "bitis": "2026-10-19T22:40:50",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Edit the reference image: same girl Ela, same mustard-yellow chunky knit sweater, same dim hallway and cold blue window light, same framing. Make it a closer portrait (head and shoulders), face turned toward camera, eyes open, a calm determined steady gaze.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/ela_gozler_acik.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 2202,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/90af6f80-8b31-4f25-a9ed-3c6814208b98.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/ela_ref.png"
+    ]
+  },
+  "request_id": "9551afed-b2b6-4464-94bc-bc6489acf571",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "9551afed-b2b6-4464-94bc-bc6489acf571",
+    "status_url": "https://api.higgsfield.ai/requests/9551afed-b2b6-4464-94bc-bc6489acf571/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/9551afed-b2b6-4464-94bc-bc6489acf571/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/3f29b86b-adb1-4506-98c2-71119f500667.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/ela_gozler_acik_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/3f29b86b-adb1-4506-98c2-71119f500667.png"
+}

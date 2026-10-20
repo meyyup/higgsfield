@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:29:03",
+  "bitis": "2026-10-19T22:30:06",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Locked-off static shot, eye level, straight-on view of a plain hallway wall. On the left side of the wall: a round, unbranded wall thermostat with a brushed metal bezel and a black display showing one large white number. Immediately to the right of the thermostat, on the same wall: a window. Through the window: a gentle hill, a single tree, and the sea in the distance. No logos, no text other than the thermostat number. 16:9.\n\nEdit the reference image. Keep the wall, the round thermostat (size, position, brushed metal bezel, black display, white digit font), the window frame, camera angle and composition exactly identical. Change only what is described below.\n\nSame wall, same thermostat showing \"24\", same window. Through the window the sea has risen and climbed up the shore, the street below is under water, the dead tree stands in water.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/pencere_kotu_2055.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 2202,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/79eb4241-f9a0-49a2-8b6a-308128f0fb58.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/kadraj_ref.png"
+    ]
+  },
+  "request_id": "ee0f68c5-4ecc-4a4b-8f82-1ec539bb4587",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "ee0f68c5-4ecc-4a4b-8f82-1ec539bb4587",
+    "status_url": "https://api.higgsfield.ai/requests/ee0f68c5-4ecc-4a4b-8f82-1ec539bb4587/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/ee0f68c5-4ecc-4a4b-8f82-1ec539bb4587/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/9742f2d5-37db-4231-9533-7b3ff769f29c.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/pencere_kotu_2055_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/9742f2d5-37db-4231-9533-7b3ff769f29c.png"
+}

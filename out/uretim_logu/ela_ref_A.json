@@ -1,0 +1,28 @@
+{
+  "zaman": "2026-10-19T22:32:43",
+  "bitis": "2026-10-19T22:34:07",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Close-up portrait of a 12-year-old girl named Ela wearing a mustard-yellow chunky knit sweater, dim hallway at night, cold blue light from a window on her face, neutral thoughtful expression. No logos.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/ela_ref.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101
+  },
+  "referans_dosyalar": {},
+  "request_id": "ff379fcf-2926-423c-9159-6b7706174557",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "ff379fcf-2926-423c-9159-6b7706174557",
+    "status_url": "https://api.higgsfield.ai/requests/ff379fcf-2926-423c-9159-6b7706174557/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/ff379fcf-2926-423c-9159-6b7706174557/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/18e455e3-e031-48cf-afca-0ec4508cf541.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/ela_ref_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/18e455e3-e031-48cf-afca-0ec4508cf541.png"
+}

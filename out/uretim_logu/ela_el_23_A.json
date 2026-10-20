@@ -1,0 +1,37 @@
+{
+  "zaman": "2026-10-19T22:35:54",
+  "bitis": "2026-10-19T22:37:17",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Image 1 is the hallway wall with the round thermostat; image 2 is the girl Ela (use her mustard-yellow chunky knit sweater only, her face is not visible). Close-up of the same round thermostat from image 1 (brushed metal bezel, black display, white digits) on the same wall, night, cold blue light from the window at the right edge of frame. A child's hand in the sleeve of the mustard-yellow chunky knit sweater enters from the right; index finger rests on the metal bezel dial. The display clearly shows the large white number \"23\". No face, no logos.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/ela_el_23.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/79eb4241-f9a0-49a2-8b6a-308128f0fb58.png",
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/5ade1eef-a794-45f0-9050-016ce2563c20.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/kadraj_ref.png",
+      "assets/gorseller/ela_ref.png"
+    ]
+  },
+  "request_id": "919b1bb5-d620-448c-90c2-4350dbc94c51",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "919b1bb5-d620-448c-90c2-4350dbc94c51",
+    "status_url": "https://api.higgsfield.ai/requests/919b1bb5-d620-448c-90c2-4350dbc94c51/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/919b1bb5-d620-448c-90c2-4350dbc94c51/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/78fe23b0-3ce1-4301-b649-a95b4f170d0b.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/ela_el_23_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/78fe23b0-3ce1-4301-b649-a95b4f170d0b.png"
+}

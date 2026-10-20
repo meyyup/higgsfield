@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:25:22",
+  "bitis": "2026-10-19T22:26:04",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Locked-off static shot, eye level, straight-on view of a plain hallway wall. On the left side of the wall: a round, unbranded wall thermostat with a brushed metal bezel and a black display showing one large white number. Immediately to the right of the thermostat, on the same wall: a window. Through the window: a gentle hill, a single tree, and the sea in the distance. No logos, no text other than the thermostat number. 16:9.\n\nEdit the reference image. Keep the wall, the round thermostat (size, position, brushed metal bezel, black display, white digit font), the window frame, camera angle and composition exactly identical. Change only what is described below.\n\nIdentical to the reference image; only change: the thermostat display shows \"24\". Night, bare tree, no snow on the hill, blue night light.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/pencere_kotu_2026.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/b17cb7ab-dad6-4cdd-88f5-0af4cb6b9ee6.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/kadraj_ref.png"
+    ]
+  },
+  "request_id": "f7a46a8f-0348-499d-a8b1-f9898db4f916",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "f7a46a8f-0348-499d-a8b1-f9898db4f916",
+    "status_url": "https://api.higgsfield.ai/requests/f7a46a8f-0348-499d-a8b1-f9898db4f916/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/f7a46a8f-0348-499d-a8b1-f9898db4f916/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/0a83b2e4-d81b-4381-8396-49d0719cf573.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/pencere_kotu_2026_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/0a83b2e4-d81b-4381-8396-49d0719cf573.png"
+}

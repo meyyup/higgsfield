@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-19T22:25:35",
+  "bitis": "2026-10-19T22:26:37",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Locked-off static shot, eye level, straight-on view of a plain hallway wall. On the left side of the wall: a round, unbranded wall thermostat with a brushed metal bezel and a black display showing one large white number. Immediately to the right of the thermostat, on the same wall: a window. Through the window: a gentle hill, a single tree, and the sea in the distance. No logos, no text other than the thermostat number. 16:9.\n\nEdit the reference image. Keep the wall, the round thermostat (size, position, brushed metal bezel, black display, white digit font), the window frame, camera angle and composition exactly identical. Change only what is described below.\n\nSame wall, same thermostat showing \"22\", same window. Through the window the big leafy tree casts its long shadow toward the window, the sea is in its normal place.\n\ncinematic, photorealistic, warm colors, soft light",
+  "prompt_dosyasi": "prompts/pencere_iyi_2055.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 2202,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/79eb4241-f9a0-49a2-8b6a-308128f0fb58.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/kadraj_ref.png"
+    ]
+  },
+  "request_id": "66f4f84c-5424-4c6d-a61b-67c72b5974da",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "66f4f84c-5424-4c6d-a61b-67c72b5974da",
+    "status_url": "https://api.higgsfield.ai/requests/66f4f84c-5424-4c6d-a61b-67c72b5974da/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/66f4f84c-5424-4c6d-a61b-67c72b5974da/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/ec9f9991-7941-4769-9a6a-7caee9d0c7e3.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/pencere_iyi_2055_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/ec9f9991-7941-4769-9a6a-7caee9d0c7e3.png"
+}
