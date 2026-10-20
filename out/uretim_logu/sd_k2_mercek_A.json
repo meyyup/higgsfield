@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-20T17:48:18",
+  "bitis": "2026-10-20T17:49:21",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Low close-up on the ground of the pine forest clearing from the location reference: dry yellow grass, pine trees, the green recycling bin for glass on the right. A discarded green glass bottle lies on dry grass; the bright sunlight passes through the glass and is focused into one tiny, intensely bright white spot on the dry grass, with a thin curl of smoke rising from that spot. Shallow depth of field. No people, no logos, no readable text. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_k2_mercek.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/cbe73c61-1539-4c0a-b8c5-c235ff7c9fb4.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/sd_orman_ref.png"
+    ]
+  },
+  "request_id": "11d59cfe-cd09-420a-a8b9-1a852090cad8",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "11d59cfe-cd09-420a-a8b9-1a852090cad8",
+    "status_url": "https://api.higgsfield.ai/requests/11d59cfe-cd09-420a-a8b9-1a852090cad8/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/11d59cfe-cd09-420a-a8b9-1a852090cad8/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/67c6075f-c576-4206-b5f6-486e279dc5fc.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_k2_mercek_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/67c6075f-c576-4206-b5f6-486e279dc5fc.png"
+}

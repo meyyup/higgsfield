@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-20T17:53:35",
+  "bitis": "2026-10-20T17:54:38",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Medium shot. Damla, the raindrop character from the reference sheet: a round classic teardrop-shaped water droplet, transparent light-blue water with a white highlight, big warm brown eyes, small eyebrows, two thin transparent arms. Keep her design exactly as in the reference and her two friends of the same raindrop design: Pıt, a smaller droplet, and Şıp, a bigger droplet (no clothes, no accessories) sit exhausted and smaller than before on a charred pine branch, the forest fire still burning in the background, orange glow and smoke. Damla is out of breath and sad, Pıt is crying with a tear, Şıp holds Pıt. No people, no logos, no readable text. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_k2_yorgun.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 3303,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/4ebf9970-8736-4fbe-9a2f-d9be10e29f58.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/sd_damla_ref.png"
+    ]
+  },
+  "request_id": "e8361e44-7352-48bb-aff9-5feef02df4ba",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "e8361e44-7352-48bb-aff9-5feef02df4ba",
+    "status_url": "https://api.higgsfield.ai/requests/e8361e44-7352-48bb-aff9-5feef02df4ba/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/e8361e44-7352-48bb-aff9-5feef02df4ba/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/5ba69e92-a51a-4e27-b25a-61df947ef0e9.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_k2_yorgun_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/5ba69e92-a51a-4e27-b25a-61df947ef0e9.png"
+}

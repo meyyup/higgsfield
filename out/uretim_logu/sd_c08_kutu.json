@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-20T18:00:01",
+  "bitis": "2026-10-20T18:02:26",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "The raindrop tower pushes the green bottle into the recycling bin, it drops in with a clink; the drops cheer and high-five. Static camera. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c08_kutu.txt",
+  "parametreler": {
+    "duration": 5,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/a6538a81-a45e-4170-b322-f289d4b425c8.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k4_kutu.png"
+    ]
+  },
+  "request_id": "6a7d4133-df0a-45e6-8025-c758f92a0d49",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "6a7d4133-df0a-45e6-8025-c758f92a0d49",
+    "status_url": "https://api.higgsfield.ai/requests/6a7d4133-df0a-45e6-8025-c758f92a0d49/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/6a7d4133-df0a-45e6-8025-c758f92a0d49/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/dfd64aef-fce6-4e19-9993-1746acce1c3a.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c08_kutu.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/dfd64aef-fce6-4e19-9993-1746acce1c3a.mp4"
+}

@@ -1,0 +1,37 @@
+{
+  "zaman": "2026-10-20T17:52:01",
+  "bitis": "2026-10-20T17:53:24",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Wide shot of the pine forest clearing from the location reference: dry yellow grass, pine trees, the green recycling bin for glass on the right on a very hot sunny summer day a year later: fresh green grass and young pine saplings, wildflowers, no bottles anywhere, the clean area is safe. Damla, the raindrop character from the reference sheet: a round classic teardrop-shaped water droplet, transparent light-blue water with a white highlight, big warm brown eyes, small eyebrows, two thin transparent arms. Keep her design exactly as in the reference relaxes happily on a big green leaf of a bush in the foreground, sunbathing with her arms behind her head; her two friends of the same raindrop design: Pıt, a smaller droplet, and Şıp, a bigger droplet (no clothes, no accessories) cheer next to her. Two small birds fly by. No people, no logos, no readable text. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_k5_temiz.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/4ebf9970-8736-4fbe-9a2f-d9be10e29f58.png",
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/6787caf7-82d9-4a39-97db-a8761230ff00.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/sd_damla_ref.png",
+      "assets/gorseller/sd_orman_ref.png"
+    ]
+  },
+  "request_id": "5fddf4b8-347c-4634-b517-8df74ca96040",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "5fddf4b8-347c-4634-b517-8df74ca96040",
+    "status_url": "https://api.higgsfield.ai/requests/5fddf4b8-347c-4634-b517-8df74ca96040/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/5fddf4b8-347c-4634-b517-8df74ca96040/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/d55dcefb-4dd3-4dca-81b5-1dd859dc0307.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_k5_temiz_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/d55dcefb-4dd3-4dca-81b5-1dd859dc0307.png"
+}

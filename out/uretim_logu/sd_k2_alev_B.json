@@ -1,0 +1,37 @@
+{
+  "zaman": "2026-10-20T17:48:24",
+  "bitis": "2026-10-20T17:49:26",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Wide shot of the pine forest clearing from the location reference: dry yellow grass, pine trees, the green recycling bin for glass on the right, now on fire: orange flames spreading across the dry grass between the discarded glass bottles, thick smoke. From the sky above, Damla, the raindrop character from the reference sheet: a round classic teardrop-shaped water droplet, transparent light-blue water with a white highlight, big warm brown eyes, small eyebrows, two thin transparent arms. Keep her design exactly as in the reference and many raindrop friends dive bravely toward the flames; where the drops hit the fire they burst into small puffs of white steam. Dramatic orange light. No people, no logos, no readable text. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_k2_alev.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 2202,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/4ebf9970-8736-4fbe-9a2f-d9be10e29f58.png",
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/6787caf7-82d9-4a39-97db-a8761230ff00.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/sd_damla_ref.png",
+      "assets/gorseller/sd_orman_ref.png"
+    ]
+  },
+  "request_id": "17d8c720-ab51-4d20-b0c5-f0dadf2cd2e5",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "17d8c720-ab51-4d20-b0c5-f0dadf2cd2e5",
+    "status_url": "https://api.higgsfield.ai/requests/17d8c720-ab51-4d20-b0c5-f0dadf2cd2e5/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/17d8c720-ab51-4d20-b0c5-f0dadf2cd2e5/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/fdd37c84-89e3-451d-8766-cfbf230588d9.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_k2_alev_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/fdd37c84-89e3-451d-8766-cfbf230588d9.png"
+}

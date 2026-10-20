@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-20T17:56:50",
+  "bitis": "2026-10-20T17:59:36",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "The raindrops dive into the flames and burst into puffs of steam with a hiss, but the fire keeps growing and spreading. Slow camera pull-back. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c03_alev.txt",
+  "parametreler": {
+    "duration": 5,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/f1b2da67-05b4-4072-85da-d5ca1d8dd5c8.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k2_alev.png"
+    ]
+  },
+  "request_id": "d0590a52-46e0-434c-b137-5870d5529b07",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "d0590a52-46e0-434c-b137-5870d5529b07",
+    "status_url": "https://api.higgsfield.ai/requests/d0590a52-46e0-434c-b137-5870d5529b07/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/d0590a52-46e0-434c-b137-5870d5529b07/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/f854658b-6bdf-41d8-a0bf-bf879a4792d1.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c03_alev.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/f854658b-6bdf-41d8-a0bf-bf879a4792d1.mp4"
+}

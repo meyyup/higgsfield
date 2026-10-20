@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-20T18:00:21",
+  "bitis": "2026-10-20T18:03:07",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "Hot summer sun shines on the clean green clearing and nothing happens, a gentle breeze moves the grass and flowers; Damla relaxes on the leaf, Pıt jumps happily and speaks. Slow push-in. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c09_temiz.txt",
+  "parametreler": {
+    "duration": 6,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/e8085c69-f3c8-4379-b1a6-35dad68f3903.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k5_temiz.png"
+    ]
+  },
+  "request_id": "aea7cd44-fd6a-4fb1-b550-a886eb9e435f",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "aea7cd44-fd6a-4fb1-b550-a886eb9e435f",
+    "status_url": "https://api.higgsfield.ai/requests/aea7cd44-fd6a-4fb1-b550-a886eb9e435f/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/aea7cd44-fd6a-4fb1-b550-a886eb9e435f/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/deb74fc3-f57d-4225-a209-756b22bee8d2.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c09_temiz.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/deb74fc3-f57d-4225-a209-756b22bee8d2.mp4"
+}

@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-20T17:56:50",
+  "bitis": "2026-10-20T18:00:16",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "Heavy rain of raindrop characters pours down together and the last flames die out in big clouds of white steam. Static camera. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c05_saganak.txt",
+  "parametreler": {
+    "duration": 4,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/9604463d-0658-4372-a108-6aa1e1bdbae1.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k3_saganak.png"
+    ]
+  },
+  "request_id": "11e1042c-b1c3-457f-b0de-7e623bea9a13",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "11e1042c-b1c3-457f-b0de-7e623bea9a13",
+    "status_url": "https://api.higgsfield.ai/requests/11e1042c-b1c3-457f-b0de-7e623bea9a13/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/11e1042c-b1c3-457f-b0de-7e623bea9a13/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/2365e6f6-383b-4e79-8aa8-0a5dddfda3c3.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c05_saganak.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/2365e6f6-383b-4e79-8aa8-0a5dddfda3c3.mp4"
+}

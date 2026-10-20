@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-20T17:49:20",
+  "bitis": "2026-10-20T17:50:43",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Low close-up on black ash after a fire. Damla, the raindrop character from the reference sheet: a round classic teardrop-shaped water droplet, transparent light-blue water with a white highlight, big warm brown eyes, small eyebrows, two thin transparent arms. Keep her design exactly as in the reference stands next to a soot-covered green glass bottle lying on its side; the sun shines through the bottle and makes a bright focused spot on the ash. Damla points at the bottle with one tiny arm, eyes wide, with a sudden 'aha' realization expression. No people, no logos, no readable text. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_k3_bulus.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 1101,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/4ebf9970-8736-4fbe-9a2f-d9be10e29f58.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/sd_damla_ref.png"
+    ]
+  },
+  "request_id": "0d0a9cca-bd29-427a-b4ca-857a8449961d",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "0d0a9cca-bd29-427a-b4ca-857a8449961d",
+    "status_url": "https://api.higgsfield.ai/requests/0d0a9cca-bd29-427a-b4ca-857a8449961d/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/0d0a9cca-bd29-427a-b4ca-857a8449961d/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/235c8375-9072-4c1f-b51a-f291da7f8266.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_k3_bulus_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/235c8375-9072-4c1f-b51a-f291da7f8266.png"
+}

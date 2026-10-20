@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-20T17:56:52",
+  "bitis": "2026-10-20T17:59:56",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "The focused sunlight spot on the dry grass grows brighter, smoke thickens, and a small flame ignites and starts to spread. Static camera. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c02_mercek.txt",
+  "parametreler": {
+    "duration": 5,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/14291118-c9ac-43b8-9211-95b1f2863905.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k2_mercek.png"
+    ]
+  },
+  "request_id": "13828bb5-65d6-468b-b3ca-d0b082226a7b",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "13828bb5-65d6-468b-b3ca-d0b082226a7b",
+    "status_url": "https://api.higgsfield.ai/requests/13828bb5-65d6-468b-b3ca-d0b082226a7b/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/13828bb5-65d6-468b-b3ca-d0b082226a7b/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/6e3ea6e7-0b19-44d8-8873-46a69c861609.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c02_mercek.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/6e3ea6e7-0b19-44d8-8873-46a69c861609.mp4"
+}

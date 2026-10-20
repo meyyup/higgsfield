@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-20T17:59:41",
+  "bitis": "2026-10-20T18:02:27",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "The raindrops' little stream rolls the glass bottles across the ground toward the green recycling bin; Damla turns to the camera and speaks happily. Slow sideways tracking shot. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c07_toplama.txt",
+  "parametreler": {
+    "duration": 5,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/bc0faf0e-cdea-4353-8ff0-3867cdfb6f7e.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k4_toplama.png"
+    ]
+  },
+  "request_id": "77bc660e-35ac-4211-837b-2c00f5ccd28a",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "77bc660e-35ac-4211-837b-2c00f5ccd28a",
+    "status_url": "https://api.higgsfield.ai/requests/77bc660e-35ac-4211-837b-2c00f5ccd28a/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/77bc660e-35ac-4211-837b-2c00f5ccd28a/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/3954ab6d-f37f-4879-b075-c649cd5a3238.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c07_toplama.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/3954ab6d-f37f-4879-b075-c649cd5a3238.mp4"
+}

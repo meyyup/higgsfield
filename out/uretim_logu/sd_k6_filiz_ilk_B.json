@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-20T17:50:31",
+  "bitis": "2026-10-20T17:51:53",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Macro close-up of dark moist forest soil in warm golden light, under a green leaf. A tiny fresh green sprout has just grown where a raindrop landed; a few sparkling water droplets glisten on it; the leaf above is now empty. No people, no logos, no readable text. 16:9.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_k6_filiz.txt",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "seed": 2202,
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/4ebf9970-8736-4fbe-9a2f-d9be10e29f58.png"
+    ]
+  },
+  "referans_dosyalar": {
+    "image_urls": [
+      "assets/gorseller/sd_damla_ref.png"
+    ]
+  },
+  "request_id": "2e9d18f4-6062-43c8-8800-6330ca06df9e",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "2e9d18f4-6062-43c8-8800-6330ca06df9e",
+    "status_url": "https://api.higgsfield.ai/requests/2e9d18f4-6062-43c8-8800-6330ca06df9e/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/2e9d18f4-6062-43c8-8800-6330ca06df9e/cancel",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/cb058adc-e427-4856-9bba-dd08db7f973c.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_k6_filiz_B.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/cb058adc-e427-4856-9bba-dd08db7f973c.png"
+}

@@ -1,0 +1,31 @@
+{
+  "zaman": "2026-10-20T17:56:50",
+  "bitis": "2026-10-20T17:58:55",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "Pıt cries and says something, Şıp hugs Pıt, Damla catches her breath and looks at the fire sadly. Fire flickers in the background. Static camera. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c04_yorgun.txt",
+  "parametreler": {
+    "duration": 4,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/24f6ae1c-ec1e-4f2d-847a-c9c91a5e7692.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k2_yorgun.png"
+    ]
+  },
+  "request_id": "06dac2ff-5db6-4118-9c25-c46101ff5113",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "06dac2ff-5db6-4118-9c25-c46101ff5113",
+    "status_url": "https://api.higgsfield.ai/requests/06dac2ff-5db6-4118-9c25-c46101ff5113/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/06dac2ff-5db6-4118-9c25-c46101ff5113/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/2bde36a4-6d16-4436-9fe1-3f64cee3dd16.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c04_yorgun.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/2bde36a4-6d16-4436-9fe1-3f64cee3dd16.mp4"
+}

@@ -1,0 +1,35 @@
+{
+  "zaman": "2026-10-20T18:00:45",
+  "bitis": "2026-10-20T18:03:50",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "Damla winks at the camera, lets go of the leaf tip and falls down onto the soil with a tiny splash; a small green sprout grows up from that spot. Camera tilts down with her. Keep the character design consistent. Smooth natural motion.\n\n3D animated feature film still, Pixar-like stylized characters in a realistic cinematic environment, warm golden light, soft shadows, rich colors",
+  "prompt_dosyasi": "prompts/sd_c10_yaprak.txt",
+  "parametreler": {
+    "duration": 5,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/08ed93e2-44d5-4708-ac92-b15cd113cc1f.png",
+    "end_image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/d0b0843c-ab73-4853-b6ad-244cc20d4a60.png"
+  },
+  "referans_dosyalar": {
+    "image_url": [
+      "assets/gorseller/sd_k6_yaprak.png"
+    ],
+    "end_image_url": [
+      "assets/gorseller/sd_k6_filiz.png"
+    ]
+  },
+  "request_id": "3db27831-b072-42ec-b73d-2344b387f4a0",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "3db27831-b072-42ec-b73d-2344b387f4a0",
+    "status_url": "https://api.higgsfield.ai/requests/3db27831-b072-42ec-b73d-2344b387f4a0/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/3db27831-b072-42ec-b73d-2344b387f4a0/cancel",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/f7c42360-de67-47d0-9c15-f8fe084b4b19.mp4"
+    }
+  },
+  "kaydedilen_dosya": "out/adaylar/sd_c10_yaprak.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/f7c42360-de67-47d0-9c15-f8fe084b4b19.mp4"
+}
