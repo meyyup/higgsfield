@@ -227,3 +227,11 @@ ffmpeg -i work/ses_k1.m4a -i work/ses_k3.m4a -i assets/ses/tik.wav -i assets/ses
 [k1][k3][tk1][tk2][tk3][kl][rz][m1][m2][m3]amix=inputs=10:normalize=0:duration=longest,apad=whole_dur=60,atrim=0:60[mix]
  -map [mix] -ac 2 -ar 48000 work/ses_mix.wav
 ffmpeg -i work/video_yazili.mp4 -i work/ses_mix.wav -map 0:v -map 1:a -af loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-27.56:measured_TP=0.76:measured_LRA=12.40:measured_thresh=-38.16:offset=0.05:linear=true,aresample=48000 -c:v copy -c:a aac -b:a 192k -movflags +faststart -shortest work/onizleme.mp4
+[2026-10-20T04:14:22] POST https://api.higgsfield.ai/alibaba/qwen-image-3/text-to-image name=v2_ana_kadraj out=out/adaylar/v2_ana_kadraj_B.png params={"resolution": "2k", "aspect_ratio": "16:9", "seed": 2202}
+[2026-10-20T04:14:22] POST https://api.higgsfield.ai/alibaba/qwen-image-3/text-to-image name=v2_ana_kadraj out=out/adaylar/v2_ana_kadraj_A.png params={"resolution": "2k", "aspect_ratio": "16:9", "seed": 1101}
+[2026-10-20T04:14:22] POST https://api.higgsfield.ai/xai/grok-imagine-image-2.0 name=v2_ana_kadraj out=out/adaylar/v2_ana_kadraj_D.png params={"quality": "medium", "resolution": "2k", "aspect_ratio": "16:9"}
+[2026-10-20T04:14:22] POST https://api.higgsfield.ai/xai/grok-imagine-image-2.0 name=v2_ana_kadraj out=out/adaylar/v2_ana_kadraj_C.png params={"quality": "medium", "resolution": "2k", "aspect_ratio": "16:9"}
+[2026-10-20T04:15:26] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/c582fbf9-94e3-4956-a3f9-f7ddfa30e5d7.png -> out/adaylar/v2_ana_kadraj_A.png
+[2026-10-20T04:15:46] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/6144d5f2-4255-4147-a5f0-6787e99958e2.png -> out/adaylar/v2_ana_kadraj_B.png
+[2026-10-20T04:17:08] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/ec648487-6cef-4d2c-a256-a1b88aa3ee67.png -> out/adaylar/v2_ana_kadraj_D.png
+[2026-10-20T04:17:09] DOWNLOAD https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/818710a0-7e39-493d-b839-f0dc76aa0e58.png -> out/adaylar/v2_ana_kadraj_C.png
