@@ -8,7 +8,7 @@ Aktif film: **SON DAMLA**. 60 sn, 3D animasyon. Başrolde bir yağmur damlası: 
 - Senaryo: `out/senaryo_son_damla.md`. Repliklerin kesin metni `scripts/sd_montaj.py` → `KONUSMA` listesinde.
 - Final video: `out/TalentCup-2026_Son_Damla.mp4` (1080p, 25 fps, −13,7 LUFS). Küçük kopya: `out/TalentCup-2026_Son_Damla_720p.mp4`. Altyazı: `out/sd_altyazi.srt`.
 - **Seslendirme tamam (ElevenLabs).** Voice Design adaylarından kullanıcı Damla 2 ve Pıt 1'i seçti (`assets/ses/elevenlabs/sesler.json`). Replikler `eleven_multilingual_v2` ile okundu: 5,2 / 2,0 / 5,1 / 5,7 / 1,6 sn. Montaj yenilendi (60,0 sn, −13,5 LUFS), 720p kopya da güncel. Notlar: Voice Design örnek metni en az 100 karakter olmalı; tarifte çocuk yaşı geçince istek güvenlik filtresine takılıyor, bu yüzden tarif "çizgi film karakteri" diye yazıldı.
-- **Sıradaki iş:** teslim paketi (aşağıda 6. adım) ve Drive linki (7. adım).
+- **Sıradaki iş:** teslim paketi hazır; yalnızca zip kaldı (Ad_Soyad + Drive linki bekleniyor, 6. adım).
 
 `CLAUDE.md` eski ±1°C filminin brifi. Klasör yapısı, loglama ve DUR kuralları Son Damla için de geçerli; içerik ve stil kısmı geçerli değil. ±1°C v2'nin (`prompts/v2_*`) ana kadraj seçimi askıda. Kullanıcı yeni fikre geçti, bu yüzden dokunma.
 
@@ -20,7 +20,7 @@ Aktif film: **SON DAMLA**. 60 sn, 3D animasyon. Başrolde bir yağmur damlası: 
 4. `python3 scripts/sd_montaj.py --yalniz-ses`. Görüntü `work/sd/` içinden yeniden kullanılır. `work/` gitignore'da; yeni oturumda yoksa script `--yalniz-ses` bayrağını yok sayar ve tam montaj yapar (~4 dk). Montaj ElevenLabs dosyalarını otomatik seçer ve onlarda perde kaydırmayı kapatır.
    - Replik süreleri değişirse `KONUSMA` listesindeki başlangıç saniyelerine bak. Mevcut sentez sesle süreler: 5,7 / 2,6 / 5,9 / 6,6 / 2,6 sn. Sahne sınırları: 0–6, 6–20, 20–28, 28–40, 40–50, 50–60.
 5. 720p kopyayı yeniden üret: `ffmpeg -i out/TalentCup-2026_Son_Damla.mp4 -c:v libx264 -crf 26 -preset slow -vf scale=1280:720 -c:a aac -b:a 160k -movflags +faststart out/TalentCup-2026_Son_Damla_720p.mp4`. Ardından commit, push ve `SendUserFile`.
-6. Teslim paketi (CLAUDE.md §8, Son Damla'ya uyarlanmış): `out/kontrol.md`, `out/kaynak_listesi.pdf` (uretim_logu'ndan), storyboard, `out/youtube_aciklama.txt`, `out/tanitim_notlari.md`, zip. **Müzik atfı zorunlu** (CC BY 4.0); metni `assets/ses/KAYNAKLAR.md`'de.
+6. Teslim paketi: `python3 scripts/sd_teslim.py` → kontrol.md (17/17 geçti), kaynak_listesi.pdf, storyboard/storyboard.jpg, youtube_aciklama.txt, tanitim_notlari.md. **Zip bekliyor:** kullanıcıdan Ad_Soyad ve Drive linki gelince `out/drive_link.txt` yaz, `python3 scripts/sd_teslim.py --ad Ad_Soyad`.
 7. Drive: kullanıcı videoyu kendisi yükleyecek. Drive aracı içeriği base64 olarak istiyor, video için pratik değil. Linki gelince `drive_link.txt` dosyasına yaz.
 
 ## Üretim hattı (Son Damla)

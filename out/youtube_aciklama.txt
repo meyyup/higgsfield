@@ -1,0 +1,17 @@
+TalentCup-2026 Son Damla
+
+Yağmur damlası Damla ve arkadaşları orman yangınlarını söndürmekte zorlanıyor. Sebebin ormana atılan cam şişeler olduğunu fark ediyorlar, çünkü şişeler güneşi mercek gibi toplayıp kuru otu tutuşturabiliyor. Damlalar şişeleri geri dönüşüme taşıyor ve bir sonraki yaz yangın çıkmıyor: ateşi söndürmek zor, başlamasını önlemek kolay.
+
+Kullanılan araçlar:
+- Higgsfield API · Grok Imagine Image 2.0 (xai/grok-imagine-image-2.0): Damla karakter kartı ve orman mekânı
+- Higgsfield API · Qwen Image 3 (alibaba/qwen-image-3/edit, text-to-image): sahne kareleri
+- Higgsfield API · Seedance 2.0 image-to-video (bytedance/seedance-2.0/image-to-video): 10 hareketli klip
+- ElevenLabs · Voice Design + eleven_multilingual_v2: Damla ve Pıt'ın sesleri
+- ffmpeg + Python (PIL, numpy): montaj, yazılar, altyazı, efekt sesleri
+- Claude Code: senaryo, prompt'lar, üretim ve montaj otomasyonu
+
+Müzik: "Heartwarming", "Volatile Reaction", "Lasting Hope", "Carefree" – Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+#TalentCup2026
