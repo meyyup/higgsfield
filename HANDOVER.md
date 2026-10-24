@@ -12,6 +12,8 @@ Aktif film: **SON DAMLA**. 60 sn, 3D animasyon. Başrolde bir yağmur damlası: 
 
 `CLAUDE.md` eski ±1°C filminin brifi. Klasör yapısı, loglama ve DUR kuralları Son Damla için de geçerli; içerik ve stil kısmı geçerli değil. ±1°C v2'nin (`prompts/v2_*`) ana kadraj seçimi askıda. Kullanıcı yeni fikre geçti, bu yüzden dokunma.
 
+- **Tanıtım videosu (şart 3) hazır:** `out/tanitim/TalentCup-2026_Son_Damla_Tanitim.mp4` (159,8 sn, −13,9 LUFS). Mert'in kayıtları `assets/ses/tanitim/t*.m4a` (Drive klasöründen indirildi), metin ve rehber `out/tanitim/anlatim_metni.md`, kayıtların ElevenLabs STT transkripti `out/tanitim/kayit_transkripti.txt`. Yeniden üretmek: `python3 scripts/tanitim.py`. Kalan: Mert'in Drive'a yükleyip herkese açık yapması.
+
 ## Sıradaki adımlar
 1. Anahtarın gelip gelmediğini kontrol et: `python3 scripts/sd_elevenlabs.py tasarla`. Script Damla ve Pıt için Voice Design adaylarını `assets/ses/elevenlabs/aday_*.mp3` olarak yazar.
    - **Uç noktalar test edilmedi.** Önceki oturumda anahtar yoktu, script ilk kez burada çalışacak. Hata alırsan ElevenLabs dokümanına bakıp düzelt: `/v1/text-to-voice/design`, `/v1/text-to-voice`, `/v1/text-to-speech/{id}`.

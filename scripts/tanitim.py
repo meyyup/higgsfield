@@ -421,10 +421,23 @@ def kayit_dosyasi(ad):
     return None
 
 
+def hazir_kayit(ad):
+    """Kaydın başındaki ve sonundaki sessizliği kırpar (-40 dB, 0,15 sn pay bırakır) → work/tanitim/kayit/<ad>.wav."""
+    k = kayit_dosyasi(ad)
+    if not k:
+        return None
+    out = WORK / "kayit" / f"{ad}.wav"
+    if not out.exists() or out.stat().st_mtime < k.stat().st_mtime:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        kirp = "silenceremove=start_periods=1:start_threshold=-40dB:start_silence=0.15"
+        ff("-i", k, "-af", f"{kirp},areverse,{kirp},areverse", "-ar", 48000, out)
+    return out
+
+
 def sure(b):
     if "sabit" in b:
         return b["sabit"]
-    k = kayit_dosyasi(b["ad"])
+    k = hazir_kayit(b["ad"])
     if k:
         return M.dur(k) + PAY
     return round(len(b["metin"].split()) / OKUMA_HIZI + 1.0, 2)
@@ -530,7 +543,7 @@ def ses(zaman, toplam):
             fc.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.3,"
                       f"afade=t=out:st={d - 0.5}:d=0.5,adelay={ms}|{ms}[s{n}]")
         else:
-            k = kayit_dosyasi(b["ad"])
+            k = hazir_kayit(b["ad"])
             if not k:
                 continue
             args += ["-i", k]

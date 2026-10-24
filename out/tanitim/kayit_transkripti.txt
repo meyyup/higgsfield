@@ -1,0 +1,12 @@
+t01: Merhaba, ben Mert. Talent Cup için Son Damla adında bir dakikalık bir animasyon filmi yaptım. Bu videoda filmi nasıl yaptığımı anlatacağım.
+t02: Filmin kahramanı Damla adında bir yağmur damlası. Damla ve arkadaşları orman yangınlarını söndürmekte çok zorlanıyor. Sonra yangınları başlatan şeylerin ormana atılan cam şişeler olduğunu fark ediyorlar. Çünkü cam şişe, cam şişe güneşi büyüteç gibi topluyor. Şimdi filmden kısa bir bölüm izleyelim.
+t04: Önce filmi altı sahneye böldüm ve sto-- bir storyboard hazırladım. Her sahne için anahtar kare var. Bulut, yangın, fark ediş, temizlik, yeni yaz ve kapanış
+t05: Mesela ikinci sahnede ki bu kareye bakalım. Önce yapay zekayı, şişeden geçen güneşin kuru otu yaktığı bir görsel çizdiririm. Sonra bu görseli video modeline verip alevin büyümesini isterim. Bu klip filmin altıncı saniyesinde başlıyor.
+t06: Bu filmi Claude, Higgsfield ve ElevenLabs'i kullanarak babamın yardımıyla yaptım. Görselleri ve videoları Higgsfield ile; karakterleri, sesleri ElevenLabs ile yaptım. Claude da prompt yazma ve montaj, montajda yardım etti.
+t07: Promptum Damla'nın karakter kartı. İki aday ürettim ve en beğendiğim seçtim. Damla her sahnede aynı görünsün diye bu kartı referans olarak kullandım.
+t08: İkinci görsel promptumu, dördüncü sahne. Damlalar küçük bir dereye ulaşıp şişeleri geri dönüşüm, geri dönüşüm kutusuna taşıyor. Burada iki adaydan birini seçtim.
+t09: Video promptunda damlaların deresi şişelere, kutuya doğru yuvarlanıyor. Damla da karaya- kameraya dönüp konuşuyor. Başlangıç karesi olarak bir önceki görseli verdim.
+t10: Eee, ikinci video promptumda Damla göz kırpıyor, yapraktan düşüyor ve düştüğü yere bir filiz çıkıyor. Bu filmin son sahnesi.
+t11: Her üretim kaydını tuttum. Kayıtlarda zaman, model, promptun tamamını ve çıkan dosyanın adı yazıyor. Sonra hepsini bir kaynak listesinde topladım
+t12: Son olarak bu görsel ve videoların filmlerin nerede, nerede olduğuna bakalım. Mercek sahnesi altıncı saniyede, toplama sahnesi yirmi sekizinci saniyede, son sahne de ellinci saniyede başlıyor
+t13: Mesajı şu: Ateşi söndürmek zor, başlamasını önlemek kolay. İzlediğiniz için teşekkür ederim
