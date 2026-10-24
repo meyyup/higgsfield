@@ -49,7 +49,8 @@ KARTLAR = [
     (42.0, 50.0, "Bu yaz: 0 yangın", 72, .62),
     (54.0, 60.0, "Ateşi söndürmek zor, başlamasını önlemek kolay.", 52, .40),
     (55.5, 60.0, "Şişeni doğaya değil, geri dönüşüme at.", 52, .50),
-    (57.5, 60.0, "TalentCup-2026", 40, .62),
+    (57.5, 60.0, "TalentCup-2026 – Son Damla", 40, .62),
+    (57.5, 60.0, "Mert Eyyupoglu", 34, .68),
 ]
 
 
@@ -242,12 +243,17 @@ def ses(altyazi):
 
 
 def main():
-    """--yalniz-ses: görüntü ve yazı katmanı önceki çalıştırmadan alınır, yalnızca ses yeniden kurulur."""
+    """--yalniz-ses: görüntü ve yazı katmanı önceki çalıştırmadan alınır, yalnızca ses yeniden kurulur.
+    --yalniz-yazi: klipler önceki çalıştırmadan alınır, yazı katmanı ve ses yeniden kurulur."""
     import sys
     yalniz_ses = "--yalniz-ses" in sys.argv and (WORK / "video.mp4").exists() and (WORK / "katman.mov").exists()
+    yalniz_yazi = "--yalniz-yazi" in sys.argv and (WORK / "video.mp4").exists()
     if yalniz_ses:
         video, katman = WORK / "video.mp4", WORK / "katman.mov"
         altyazi = [(s, s + dur(konusma_dosyasi(ad)), m) for ad, s, m in KONUSMA]
+    elif yalniz_yazi:
+        video = WORK / "video.mp4"
+        katman, altyazi = katman_video()
     else:
         video = birlestir(segmentler())
         katman, altyazi = katman_video()

@@ -153,7 +153,7 @@ def kontrol():
         ("Kapanış davranış çağrısı", True,
          f"{sn(*kart['Ateşi söndürmek zor, başlamasını önlemek kolay.'])} sn: \"Ateşi söndürmek zor, başlamasını "
          f"önlemek kolay.\" · {sn(*kart['Şişeni doğaya değil, geri dönüşüme at.'])} sn: \"Şişeni doğaya değil, "
-         f"geri dönüşüme at.\" · {sn(*kart['TalentCup-2026'])} sn: TalentCup-2026"),
+         f"geri dönüşüme at.\" · {sn(*kart['TalentCup-2026 – Son Damla'])} sn: \"TalentCup-2026 – Son Damla\" ve \"Mert Eyyupoglu\""),
         ("Süre 55–65 sn", 55 <= sure <= 65, f"{sure:.2f} sn".replace(".", ",")),
         ("Ses seviyesi ~−14 LUFS", -15.5 <= lufs <= -12.5, f"{lufs:.1f} LUFS".replace(".", ",")),
         ("Biçim H.264 + AAC, 1920×1080, 25 fps", akis[0] == "h264,1920,1080,25/1" and akis[1].startswith("aac"),

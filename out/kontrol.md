@@ -16,7 +16,7 @@ Video: `out/TalentCup-2026_Son_Damla.mp4` · otomatik üretildi: `scripts/sd_tes
 | 10 | ≥ 2 sn hareket | geçti | 10 Seedance klibi, her biri 2,5–6 sn hareketli (0–60 sn) |
 | 11 | Sesli tam cümleler altyazılı | geçti | 5/5 cümle; altyazı videoya yakılı ve ayrıca out/sd_altyazi.srt |
 | 12 | Müzik ≥ 10 sn | geçti | 58,5 sn (0–60 sn, 20–21,5 sn bilinçli sessizlik; 4 parça, CC BY 4.0) |
-| 13 | Kapanış davranış çağrısı | geçti | 54–60 sn: "Ateşi söndürmek zor, başlamasını önlemek kolay." · 55,5–60 sn: "Şişeni doğaya değil, geri dönüşüme at." · 57,5–60 sn: TalentCup-2026 |
+| 13 | Kapanış davranış çağrısı | geçti | 54–60 sn: "Ateşi söndürmek zor, başlamasını önlemek kolay." · 55,5–60 sn: "Şişeni doğaya değil, geri dönüşüme at." · 57,5–60 sn: "TalentCup-2026 – Son Damla" ve "Mert Eyyupoglu" |
 | 14 | Süre 55–65 sn | geçti | 60,00 sn |
 | 15 | Ses seviyesi ~−14 LUFS | geçti | -13,5 LUFS |
 | 16 | Biçim H.264 + AAC, 1920×1080, 25 fps | geçti | h264,1920,1080,25/1 · aac,0/0 |
