@@ -13,7 +13,7 @@ Mert, bu metni kendi sesinle okuyacaksın. Yüzün görünmeyecek, yalnızca ses
 
 Dosyaları bana iletmek için: Google Drive'a bir klasör aç, kayıtları oraya yükle ve linkini gönder. Ya da GitHub'da `assets/ses/tanitim/` klasörüne yükle.
 
-Tahmini toplam süre: **158 sn** (şart: 60–180 sn).
+Tahmini toplam süre: **156 sn** (şart: 60–180 sn).
 
 ## Metin
 
@@ -37,35 +37,35 @@ _Kayıt yok: burada filmden 14 saniyelik bir bölüm sesiyle oynuyor._
 
 > Mesela ikinci sahnedeki bu kareye bakalım. Önce yapay zekâya, şişeden geçen güneşin kuru otu yaktığı bir görsel çizdirdim. Sonra bu görseli video modeline verip alevin büyümesini istedim. Bu klip filmin altıncı saniyesinde başlıyor.
 
-### t06 · Araçlar  (71–87. sn)
+### t06 · Araçlar  (71–85. sn)
 
-> Görseller için Higgsfield'da Grok Imagine ve Qwen Image modellerini, videolar için Seedance'i, karakter sesleri için ElevenLabs'i kullandım. Montajı ffmpeg ve Python ile yaptım. Claude Code da prompt yazmada ve montajda bana yardım etti.
+> Bu filmi Claude, Higgsfield ve ElevenLabs kullanarak, babamın yardımıyla yaptım. Görselleri ve videoları Higgsfield ile, karakterlerin seslerini ElevenLabs ile yaptım. Claude da prompt yazmama ve montaja yardım etti.
 
-### t07 · Görsel prompt 1  (87–99. sn)
+### t07 · Görsel prompt 1  (85–97. sn)
 
 > İlk görsel promptum Damla'nın karakter kartı. İki aday ürettim ve en beğendiğimi seçtim. Damla her sahnede aynı görünsün diye bu kartı referans olarak kullandım.
 
-### t08 · Görsel prompt 2  (99–110. sn)
+### t08 · Görsel prompt 2  (97–107. sn)
 
 > İkinci görsel promptum dördüncü sahne: damlalar küçük bir dere olup şişeleri geri dönüşüm kutusuna taşıyor. Burada da iki adaydan birini seçtim.
 
-### t09 · Video prompt 1  (110–120. sn)
+### t09 · Video prompt 1  (107–118. sn)
 
 > İlk video promptumda, damlaların deresi şişeleri kutuya doğru yuvarlıyor. Damla da kameraya dönüp konuşuyor. Başlangıç karesi olarak bir önceki görseli verdim.
 
-### t10 · Video prompt 2  (120–129. sn)
+### t10 · Video prompt 2  (118–127. sn)
 
 > İkinci video promptumda Damla göz kırpıyor, yapraktan düşüyor ve düştüğü yerde bir filiz çıkıyor. Bu, filmin son sahnesi.
 
-### t11 · Üretim kayıtları  (129–139. sn)
+### t11 · Üretim kayıtları  (127–137. sn)
 
 > Her üretimin kaydını tuttum. Kayıtlarda zaman, model, promptun tamamı ve çıkan dosyanın adı yazıyor. Sonra hepsini bir kaynak listesinde topladım.
 
-### t12 · Filmde nerede kullanıldı?  (139–152. sn)
+### t12 · Filmde nerede kullanıldı?  (137–150. sn)
 
 > Son olarak bu görsel ve videoların filmde nerede olduğuna bakalım. Mercek sahnesi altıncı saniyede, toplama sahnesi yirmi sekizinci saniyede, son sahne de ellinci saniyede başlıyor.
 
-### t13 · Kapanış  (152–158. sn)
+### t13 · Kapanış  (150–156. sn)
 
 > Filmimin mesajı şu: Ateşi söndürmek zor, başlamasını önlemek kolay. İzlediğiniz için teşekkürler!
 
@@ -75,7 +75,7 @@ _Kayıt yok: burada filmden 14 saniyelik bir bölüm sesiyle oynuyor._
 | --- | --- |
 | Filmin konusu ve filmden bir bölüm | t02, t03 |
 | Storyboard ve bir karenin sahneye dönüşmesi | t04, t05 |
-| Kullanılan araçlar | t06 |
+| Kullanılan araçlar | t06 (ekranda model adları da yazıyor) |
 | En az 2 görsel prompt | t07 (Damla karakter kartı), t08 (toplama sahnesi) |
 | En az 2 video prompt | t09 (toplama klibi), t10 (yaprak klibi) |
 | Üretim kayıtları ve sonuçları | t07–t10 (sonuçlar), t11 (kayıtlar, kaynak listesi) |

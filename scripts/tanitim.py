@@ -212,20 +212,19 @@ def kart_araclar():
     im = arka()
     d = baslik(im, 6, "Kullandığım araçlar")
     satirlar = [
-        ("Görseller", "Higgsfield · Grok Imagine Image 2.0 (karakter ve mekân), Qwen Image 3 (sahne kareleri)"),
-        ("Videolar", "Higgsfield · Seedance 2.0 (10 klip, görselden videoya)"),
-        ("Sesler", "ElevenLabs · Voice Design ile karakter sesleri, Türkçe seslendirme"),
-        ("Müzik", "Kevin MacLeod (incompetech.com) · telifsiz, CC BY 4.0"),
-        ("Montaj", "ffmpeg + Python (yazılar, altyazı, efekt sesleri, ses miksajı)"),
-        ("Yardımcı", "Claude Code · prompt yazma, üretim kayıtları ve montaj otomasyonu"),
+        ("Claude", "Senaryo, prompt yazma ve montaj"),
+        ("Higgsfield", "Görseller ve videolar"),
+        ("ElevenLabs", "Damla ve Pıt'ın sesleri"),
+        ("Babam", "Her adımda yardım etti"),
     ]
     for i, (k, v) in enumerate(satirlar):
-        y = 210 + i * 128
-        d.rounded_rectangle((130, y, 1790, y + 104), radius=18, fill=(26, 42, 58))
-        d.text((170, y + 52), k, font=F(40), fill=SARI, anchor="lm")
-        for j, s in enumerate(sar(d, v, F(34, False), 1180)[:2]):
-            d.text((520, y + 52 + (j - (len(sar(d, v, F(34, False), 1180)[:2]) - 1) / 2) * 40), s,
-                   font=F(34, False), fill=BEYAZ, anchor="lm")
+        y = 220 + i * 160
+        d.rounded_rectangle((260, y, 1660, y + 130), radius=22, fill=(26, 42, 58) if k != "Babam" else (70, 56, 24))
+        d.text((320, y + 65), k, font=F(56), fill=SARI, anchor="lm")
+        d.text((760, y + 65), v, font=F(44, False), fill=BEYAZ, anchor="lm")
+    d.text((W / 2, 900), "Higgsfield modelleri: Grok Imagine, Qwen Image, Seedance 2.0 · Montaj: ffmpeg + Python",
+           font=F(28, False), fill=GRI, anchor="mm")
+    d.text((W / 2, 945), "Müzik: Kevin MacLeod (incompetech.com), CC BY 4.0", font=F(28, False), fill=GRI, anchor="mm")
     return im
 
 
@@ -378,9 +377,9 @@ BOLUMLER = [
                "yaktığı bir görsel çizdirdim. Sonra bu görseli video modeline verip alevin büyümesini istedim. "
                "Bu klip filmin altıncı saniyesinde başlıyor."),
     dict(ad="t06", baslik="Araçlar", planlar=[("kart", 1, kart_araclar)],
-         metin="Görseller için Higgsfield'da Grok Imagine ve Qwen Image modellerini, videolar için Seedance'i, "
-               "karakter sesleri için ElevenLabs'i kullandım. Montajı ffmpeg ve Python ile yaptım. Claude Code da "
-               "prompt yazmada ve montajda bana yardım etti."),
+         metin="Bu filmi Claude, Higgsfield ve ElevenLabs kullanarak, babamın yardımıyla yaptım. Görselleri ve "
+               "videoları Higgsfield ile, karakterlerin seslerini ElevenLabs ile yaptım. Claude da prompt yazmama ve "
+               "montaja yardım etti."),
     dict(ad="t07", baslik="Görsel prompt 1", planlar=[("kart", 1.4, lambda: kart_gorsel_prompt(7, 1, "sd_damla_ref")),
                                                       ("kart", 1, lambda: kart_adaylar(7, 1, "sd_damla_ref"))],
          metin="İlk görsel promptum Damla'nın karakter kartı. İki aday ürettim ve en beğendiğimi seçtim. Damla her "
@@ -581,7 +580,7 @@ def anlatim_metni():
            "| Şart | Bölüm |", "| --- | --- |",
            "| Filmin konusu ve filmden bir bölüm | t02, t03 |",
            "| Storyboard ve bir karenin sahneye dönüşmesi | t04, t05 |",
-           "| Kullanılan araçlar | t06 |",
+           "| Kullanılan araçlar | t06 (ekranda model adları da yazıyor) |",
            "| En az 2 görsel prompt | t07 (Damla karakter kartı), t08 (toplama sahnesi) |",
            "| En az 2 video prompt | t09 (toplama klibi), t10 (yaprak klibi) |",
            "| Üretim kayıtları ve sonuçları | t07–t10 (sonuçlar), t11 (kayıtlar, kaynak listesi) |",
