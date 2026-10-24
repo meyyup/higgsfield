@@ -1,6 +1,11 @@
-TalentCup-2026 Son Damla
+TalentCup-2026 – Son Damla
 
-Yağmur damlası Damla ve arkadaşları orman yangınlarını söndürmekte zorlanıyor. Sebebin ormana atılan cam şişeler olduğunu fark ediyorlar, çünkü şişeler güneşi mercek gibi toplayıp kuru otu tutuşturabiliyor. Damlalar şişeleri geri dönüşüme taşıyor ve bir sonraki yaz yangın çıkmıyor: ateşi söndürmek zor, başlamasını önlemek kolay.
+Yağmur damlası Damla ve arkadaşları orman yangınlarını söndürmekte zorlanıyor. Sebebin ormana atılan cam şişeler olduğunu fark ediyorlar, çünkü şişeler güneşi mercek gibi toplayıp kuru otu tutuşturabiliyor. Damlalar şişeleri geri dönüşüme taşıyor ve bir sonraki yaz yangın çıkmıyor.
+
+Ateşi söndürmek zor, başlamasını önlemek kolay.
+Şişeni doğaya değil, geri dönüşüme at.
+
+Yapım: Mert Eyyupoglu
 
 Kullanılan araçlar:
 - Higgsfield API · Grok Imagine Image 2.0 (xai/grok-imagine-image-2.0): Damla karakter kartı ve orman mekânı

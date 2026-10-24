@@ -24,7 +24,8 @@ OUT = ROOT / "out"
 LOG = OUT / "uretim_logu"
 VIDEO = M.OUT
 SRT = OUT / "sd_altyazi.srt"
-BASLIK = "TalentCup-2026 Son Damla"
+BASLIK = "TalentCup-2026 – Son Damla"  # filmin kapanış kartıyla aynı
+YAPIMCI = "Mert Eyyupoglu"
 TR = "çğıöşüÇĞİÖŞÜâ"
 ATIF = ("Music by Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License. "
         "http://creativecommons.org/licenses/by/4.0/")
@@ -362,7 +363,12 @@ def storyboard():
 def youtube():
     (OUT / "youtube_aciklama.txt").write_text(f"""{BASLIK}
 
-Yağmur damlası Damla ve arkadaşları orman yangınlarını söndürmekte zorlanıyor. Sebebin ormana atılan cam şişeler olduğunu fark ediyorlar, çünkü şişeler güneşi mercek gibi toplayıp kuru otu tutuşturabiliyor. Damlalar şişeleri geri dönüşüme taşıyor ve bir sonraki yaz yangın çıkmıyor: ateşi söndürmek zor, başlamasını önlemek kolay.
+Yağmur damlası Damla ve arkadaşları orman yangınlarını söndürmekte zorlanıyor. Sebebin ormana atılan cam şişeler olduğunu fark ediyorlar, çünkü şişeler güneşi mercek gibi toplayıp kuru otu tutuşturabiliyor. Damlalar şişeleri geri dönüşüme taşıyor ve bir sonraki yaz yangın çıkmıyor.
+
+Ateşi söndürmek zor, başlamasını önlemek kolay.
+Şişeni doğaya değil, geri dönüşüme at.
+
+Yapım: {YAPIMCI}
 
 Kullanılan araçlar:
 - Higgsfield API · Grok Imagine Image 2.0 (xai/grok-imagine-image-2.0): Damla karakter kartı ve orman mekânı
