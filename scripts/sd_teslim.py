@@ -38,11 +38,71 @@ SAHNELER = [  # (kod, başla, bitir, ad, anahtar kare, özet)
     ("K6", 50, 60, "Kapanış", "sd_k6_yaprak", "Damla yapraktan düşüyor, filiz çıkıyor; kapanış yazıları."),
 ]
 MUZIK_KAYNAK = {
-    "Heartwarming": '"Heartwarming", Kevin MacLeod (incompetech.com), CC BY 4.0',
-    "Volatile_Reaction": '"Volatile Reaction", Kevin MacLeod (incompetech.com), CC BY 4.0',
-    "Lasting_Hope": '"Lasting Hope", Kevin MacLeod (incompetech.com), CC BY 4.0',
-    "Carefree": '"Carefree", Kevin MacLeod (incompetech.com), CC BY 4.0',
+    "Heartwarming": 'Müzik parçası "Heartwarming"; besteci Kevin MacLeod (incompetech.com); lisans CC BY 4.0',
+    "Volatile_Reaction": 'Müzik parçası "Volatile Reaction"; besteci Kevin MacLeod (incompetech.com); lisans CC BY 4.0',
+    "Lasting_Hope": 'Müzik parçası "Lasting Hope"; besteci Kevin MacLeod (incompetech.com); lisans CC BY 4.0',
+    "Carefree": 'Müzik parçası "Carefree"; besteci Kevin MacLeod (incompetech.com); lisans CC BY 4.0',
 }
+
+# Kaynak listesi için Türkçe prompt özetleri (prompt'ların İngilizce aslı uretim_logu'nda birebir duruyor)
+OZET_TR = {
+    "sd_damla_ref": "Damla'nın karakter kartı: klasik damla biçimli, şeffaf açık mavi su, tepesinde beyaz parıltı, "
+                    "büyük meraklı gözler, iki ince kol. Üç görünüş yan yana: önden gülümseyen, yarı profil kararlı, "
+                    "önden endişeli.",
+    "sd_orman_ref": "Sıcak, kuru bir yaz öğleden sonrasında çam ormanında açıklık, sabit geniş plan. Kuru sarı otların "
+                    "üstünde atılmış cam şişeler, ortada güneşte parlayan yeşil bir şişe; sağ kenarda yeşil, "
+                    "markasız cam geri dönüşüm kutusu.",
+    "sd_k1_bulut": "Gün batımında kabarık bir bulutun kenarı: Damla, küçük Pıt ve iri Şıp aşağıya bakıyor. Aşağıda "
+                   "kavrulmuş çam ormanı, uzakta yükselen ince bir duman. Damla endişeyle kameraya bakıyor.",
+    "sd_k2_alev": "Aynı açıklık alev alev: turuncu alevler şişelerin arasındaki kuru otlara yayılıyor. Damla ve "
+                  "arkadaşları gökten alevlere dalıyor, değdikleri yerde beyaz buhar çıkıyor.",
+    "sd_k2_mercek": "Yerde yakın plan: kuru otta yatan yeşil cam şişeden geçen güneş ışığı tek, çok parlak bir "
+                    "noktada toplanıyor; o noktadan ince bir duman yükseliyor.",
+    "sd_k2_yorgun": "Kömürleşmiş bir çam dalında yorgun ve küçülmüş üç damla; arkada yangın sürüyor. Damla soluk "
+                    "soluğa ve üzgün, Pıt ağlıyor, Şıp ona sarılıyor.",
+    "sd_k3_bulus": "Yangın sonrası küllerde yakın plan: Damla isli yeşil şişenin yanında. Güneş şişeden geçip külde "
+                   "parlak bir nokta yapıyor; Damla şişeyi gösteriyor, yüzünde aydınlanma.",
+    "sd_k3_saganak": "Aynı açıklıkta sağanak: kara buluttan binlerce damla birlikte yağıyor, son alevler büyük "
+                     "beyaz buhar bulutlarıyla sönüyor. Yerde kararmış otlar, şişeler hâlâ orada.",
+    "sd_k4_kutu": "Geri dönüşüm kutusunun yanında: üç damla birbirinin omzuna çıkıp kule oluyor ve yeşil şişeyi "
+                  "kutunun deliğinden içeri itiyor. Mutlu ve gururlu yüzler, sabah ışığı.",
+    "sd_k4_toplama": "Yangından sonraki sabah, yanık otların arasında filizler. Damla, arkadaşları ve diğer damlalar "
+                     "küçük, parıltılı bir dere oluşturup şişeleri geri dönüşüm kutusuna doğru yuvarlıyor.",
+    "sd_k5_temiz": "Bir yıl sonra çok sıcak bir yaz günü: yeşil otlar, genç çam fidanları, kır çiçekleri, hiç şişe "
+                   "yok. Damla bir yaprakta güneşleniyor, Pıt ve Şıp sevinçle yanında; iki kuş geçiyor.",
+    "sd_k6_filiz": "Sıcak altın ışıkta nemli orman toprağına makro plan: damlanın düştüğü yerde minik, taze bir "
+                   "filiz çıkmış, üstünde su damlacıkları parlıyor; üstteki yaprak artık boş.",
+    "sd_k6_yaprak": "Gür yaz ormanında bir yaprağın ucuna makro plan, arkadan altın ışık. Damla yaprağın ucunda "
+                    "asılı, kameraya bakıp kocaman gülümseyerek göz kırpıyor.",
+    "sd_c01_bulut": "Bulut kenarındaki damlalar aşağıdaki dumana bakıyor; Damla endişeli yüzle kameraya dönüp "
+                    "konuşuyor. Yavaş, yumuşak yaklaşma.",
+    "sd_c02_mercek": "Kuru ottaki parlak nokta güçleniyor, duman koyulaşıyor, küçük bir alev tutuşup yayılmaya "
+                     "başlıyor. Sabit kamera.",
+    "sd_c03_alev": "Damlalar alevlere dalıp tıslayarak buhar oluyor ama yangın büyüyüp yayılmaya devam ediyor. "
+                   "Kamera yavaşça geri çekiliyor.",
+    "sd_c04_yorgun": "Pıt ağlayıp bir şey söylüyor, Şıp ona sarılıyor, Damla soluklanıp üzgün gözlerle yangına "
+                     "bakıyor. Arkada alevler titriyor. Sabit kamera.",
+    "sd_c05_saganak": "Damlalar hep birlikte sağanak olup yağıyor, son alevler büyük beyaz buhar bulutlarıyla "
+                      "sönüyor. Sabit kamera.",
+    "sd_c06_bulus": "Damla şişeden geçen güneşin yaptığı parlak noktayı fark ediyor, onu gösterip aydınlanmış bir "
+                    "yüzle konuşuyor. Şişeye yavaş yaklaşma.",
+    "sd_c07_toplama": "Damlaların küçük deresi şişeleri geri dönüşüm kutusuna doğru yuvarlıyor; Damla kameraya dönüp "
+                      "neşeyle konuşuyor. Yavaş yan kaydırma.",
+    "sd_c08_kutu": "Damla kulesi yeşil şişeyi kutuya itiyor, şişe tıngırdayarak içeri düşüyor; damlalar sevinip "
+                   "çak yapıyor. Sabit kamera.",
+    "sd_c09_temiz": "Sıcak yaz güneşi temiz, yeşil açıklığa vuruyor ve hiçbir şey olmuyor; hafif rüzgâr otları ve "
+                    "çiçekleri sallıyor. Damla yaprakta dinleniyor, Pıt sevinçle zıplayıp konuşuyor. Yavaş yaklaşma.",
+    "sd_c10_yaprak": "Damla kameraya göz kırpıp yaprağın ucunu bırakıyor ve minik bir şıpırtıyla toprağa düşüyor; "
+                     "düştüğü yerden yeşil bir filiz çıkıyor. Kamera onunla birlikte aşağı iniyor.",
+    "ses_damla": "Cesur ve neşeli bir çizgi film kahramanını, minik bir yağmur damlasını Türkçe seslendiren kadın "
+                 "seslendirme sanatçısı. Parlak, hafif, ince, sıcak ve ifadeli; biraz nefes nefese. Temiz stüdyo kaydı.",
+    "ses_pit": "Minik, heyecanlı bir çizgi film yardımcı karakterini, küçük bir yağmur damlasını Türkçe seslendiren "
+               "sanatçı. Çok ince, cırtlak, sevimli ve duygulu; biraz hızlı ve hoplayan. Temiz stüdyo kaydı.",
+}
+STIL_TR = ("3D animasyon uzun metraj film karesi; gerçekçi sinematik ortamda stilize, sevimli karakterler; sıcak altın "
+           "ışık, yumuşak gölgeler, zengin renkler")
+ATIF_TR = ("Müzik: Kevin MacLeod (incompetech.com). Creative Commons Atıf 4.0 (CC BY 4.0) lisansıyla kullanılmıştır: "
+           "http://creativecommons.org/licenses/by/4.0/")
 
 
 def sn(a, b):
@@ -189,15 +249,15 @@ def kaynak_satirlari():
         klipler = kare_klip.get(ad, [])
         filmde = ", ".join(sn(*z[k]) for k in klipler) + " (klibin ilk karesi)" if klipler else \
             "doğrudan yok (karakter/mekân referansı)"
-        satir.append(("Görsel", "Higgsfield · " + lg.get("model", "?"), ozet(lg.get("prompt", prompt_metni(ad))),
+        satir.append(("Görsel", "Higgsfield · " + lg.get("model", "?"), OZET_TR[ad],
                       f"assets/gorseller/{ad}.png (aday {x})", filmde, f"uretim_logu/{ad}_{x}.json"))
     for ad, (a, b) in z.items():
         lg = oku_log(ad)
-        satir.append(("Video", "Higgsfield · " + lg.get("model", "?"), ozet(lg.get("prompt", prompt_metni(ad))),
+        satir.append(("Video", "Higgsfield · " + lg.get("model", "?"), OZET_TR[ad],
                       lg.get("kaydedilen_dosya", f"out/adaylar/{ad}.mp4"), sn(a, b), f"uretim_logu/{ad}.json"))
     for kr in ("damla", "pit"):
         lg = oku_log(f"elevenlabs_tasarla_{kr}")
-        satir.append(("Ses tasarımı", "ElevenLabs · Voice Design", ozet(lg.get("istek", {}).get("voice_description", "")),
+        satir.append(("Ses tasarımı", "ElevenLabs · Voice Design", OZET_TR[f"ses_{kr}"],
                       f"assets/ses/elevenlabs/aday_{kr}_*.mp3", "seçilen ses, aşağıdaki repliklerde",
                       f"uretim_logu/elevenlabs_tasarla_{kr}.json, elevenlabs_sec_{kr}.json"))
     alt = altyazi_oku()
@@ -235,7 +295,7 @@ def kaynak_pdf(satir):
     h1 = ParagraphStyle("h", fontName="DVB", fontSize=15, leading=19)
     nt = ParagraphStyle("n", fontName="DV", fontSize=8.5, leading=11)
     P = lambda s, y=st: Paragraph(escape(str(s)), y)  # noqa: E731
-    bas = ["Tür", "Araç / model", "Prompt özeti / kaynak", "Dosya", "Filmde (sn)", "Log"]
+    bas = ["Tür", "Araç / model", "Prompt özeti (Türkçe) / kaynak", "Dosya", "Filmde (sn)", "Log"]
     data = [[P(b, stb) for b in bas]] + [[P(c) for c in r] for r in satir]
     w = [18 * mm, 48 * mm, 92 * mm, 50 * mm, 30 * mm, 39 * mm]
     t = Table(data, colWidths=w, repeatRows=1)
@@ -248,10 +308,12 @@ def kaynak_pdf(satir):
                             rightMargin=12 * mm, topMargin=12 * mm, bottomMargin=12 * mm,
                             title=f"{BASLIK} · Kaynak listesi", author="TalentCup-2026")
     doc.build([P(f"{BASLIK} · Kaynak listesi", h1), Spacer(1, 3 * mm),
-               P("Tüm üretim çağrıları out/uretim_logu/ altında JSON olarak loglandı (zaman, model, prompt birebir, "
-                 "parametreler, dönen ID/URL, kaydedilen dosya). Komutlar: out/komutlar.log. Stil cümlesi her görsel/"
-                 "video prompt'unun sonunda: " + prompt_metni("sd_stil"), nt), Spacer(1, 3 * mm), t,
-               Spacer(1, 4 * mm), P("Müzik atfı: " + ATIF, nt),
+               P("Tüm üretim çağrıları out/uretim_logu/ altında JSON olarak kayıtlı: zaman, model, prompt'un birebir "
+                 "metni, parametreler, dönen ID/URL ve kaydedilen dosya. Komutlar: out/komutlar.log. Görsel ve video "
+                 "modellerine verilen prompt'lar İngilizce yazıldı; tablodaki özetler Türkçedir, "
+                 "İngilizce asılları log dosyalarında ve prompts/ klasöründedir. Her görsel ve video prompt'unun sonuna "
+                 "aynı stil cümlesi eklendi: " + STIL_TR + ".", nt), Spacer(1, 3 * mm), t,
+               Spacer(1, 4 * mm), P(ATIF_TR, nt), P("Lisansın istediği özgün atıf metni: " + ATIF, nt),
                P("Türkçe karakter testi: ç ğ ı ö ş ü Ç Ğ İ Ö Ş Ü", nt)])
 
 
