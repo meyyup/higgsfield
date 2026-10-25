@@ -1,0 +1,28 @@
+TalentCup-2026 – Son Damla | Filmimi nasıl yaptım?
+
+Merhaba, ben Mert! Bu videoda TalentCup-2026 için yaptığım bir dakikalık animasyon filmi "Son Damla"yı nasıl hazırladığımı anlatıyorum. Filmde yağmur damlası Damla ve arkadaşları, orman yangınlarını başlatan şeyin ormana atılan cam şişeler olduğunu fark ediyor ve şişeleri geri dönüşüme taşıyor. Storyboard'dan final filme kadar bütün adımları, kullandığım promptları ve üretim kayıtlarını gösteriyorum.
+
+Bölümler:
+0:00 Giriş ve filmin konusu
+0:29 Filmden bir bölüm
+0:43 Storyboard
+0:55 Bir kare nasıl sahneye dönüştü?
+1:14 Kullandığım araçlar
+1:28 Görsel promptlar
+1:49 Video promptlar
+2:09 Üretim kayıtları ve filmde kullanıldığı yerler
+
+Filmi Claude, Higgsfield ve ElevenLabs kullanarak, babamın yardımıyla yaptım.
+- Higgsfield: görseller ve videolar (Grok Imagine, Qwen Image, Seedance 2.0)
+- ElevenLabs: Damla ve Pıt'ın sesleri
+- Claude: senaryo, prompt yazma ve montaj
+- Montaj: ffmpeg + Python
+
+Ateşi söndürmek zor, başlamasını önlemek kolay.
+Şişeni doğaya değil, geri dönüşüme at.
+
+Müzik: "Heartwarming", "Volatile Reaction", "Lasting Hope", "Carefree" – Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+#TalentCup2026 #SonDamla #animasyon #geridönüşüm
