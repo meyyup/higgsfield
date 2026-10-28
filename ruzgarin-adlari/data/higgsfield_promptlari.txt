@@ -1,0 +1,45 @@
+# Rüzgârın Adları — yedek görsel promptları (Higgsfield)
+# YALNIZCA kartın el çizimi fotoğrafı (media/images/NN.jpg) yoksa kullanılır.
+# Her promptun başına aşağıdaki stil satırı eklenir.
+
+STIL: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos.
+
+01 Yıldız: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Fishermen pulling nets at night under one bright North Star
+02 Poyraz: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Cold wind over the Bosphorus, a cloud with puffed cheeks blowing
+03 Gündoğusu: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Sunrise, gentle breeze moving curtains at an open window
+04 Keşişleme: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Snowy mountain with a small monastery above a calm sea
+05 Kıble: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Compass needle pointing south, warm dry wind over fields
+06 Lodos: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Istanbul ferry rocking on big waves in wind and rain
+07 Günbatısı: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Orange sunset over the sea, small waves
+08 Karayel: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Dark cloud, bending tree, a door slamming in the wind
+09 Rüzgâr gülü: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Ornate compass rose on an old map
+10 Orsa: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Sailboat heeling while sailing upwind
+11 Pupa: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Sailboat with full sail, wind from behind
+12 Esinti: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Light breeze moving a white curtain
+13 Meltem: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Summer evening pier, gentle sea breeze
+14 İmbat: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Seafront, afternoon breeze from sea to land
+15 Samyeli: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Hot desert wind over dunes, dry crops
+16 Bora: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Small boat heeling in a sudden squall
+17 Fırtına: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Stormy sea, a wheel of fortune shape in the clouds
+18 Kasırga: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Spiral storm clouds over a coast
+19 Hortum: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Tornado funnel shaped like an elephant trunk
+20 Boran: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Shepherd guiding sheep in a snowy steppe storm
+21 Limanlık: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Mirror-calm sea with boats reflected
+22 Rüzgâr gibi: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Child running across a schoolyard with wind lines
+23 Rüzgâr gelecek delikleri tıkamak: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Hands sealing gaps around a window
+24 Rüzgârdan nem kapmak: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. A small sulking cloud in a light breeze
+25 Rüzgârına kapılmak: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. A leaf swept along by a gust
+26 Rüzgâra karşı tüküren kendi yüzüne tükürür: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. An arrow thrown into the wind curving back
+27 Tembele dediler kapını ört, dedi yel eser örter: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Lazy cat by an open door as the wind shuts it
+28 Yel: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Wind through the top of a tall lone tree
+29 Rüzgâr: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Wind lines flowing out of an old clock face
+30 Bulut: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Wind pushing dark clouds apart, sunlight breaking through
+31 Tipi: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Blizzard with snow blowing sideways
+32 Esin: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Spring wind sweeping away snow, flowers opening
+33 Yel değirmeni: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Row of stone windmills on a hilltop
+34 Yelken: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Sails going slack as the wind dies
+35 Harman savurmak: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Farmer tossing wheat with a wooden fork, chaff blowing away
+36 Yaba: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Wooden winnowing fork, straw in the air
+37 Körük: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Blacksmith pumping bellows, coals glowing
+38 Yelpaze: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Grandmother with a patterned folding fan
+39 Uçurtma: Vertical 9:16, soft watercolor children's book illustration, warm colors, no text, no logos. Kids flying a diamond kite on a windy hill

@@ -1,0 +1,8 @@
+# Öğrenci kayıtları/fotoğrafları ve üretilen videolar git'e girmez
+media/images/*
+media/audio/*
+!media/images/.gitkeep
+!media/audio/.gitkeep
+videos/*.mp4
+print/qr/
+__pycache__/
