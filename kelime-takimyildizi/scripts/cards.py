@@ -33,7 +33,9 @@ IMG_H = 1080
 BG = (255, 251, 243)
 INK = (45, 40, 50)
 QR_PX = 295               # 25 mm @ 300 dpi
-FOOT = "Kelime Takımyıldızı · Türkçenin Kelime Hazinesi"
+CTA = "Oku, İzle ve Dinle"
+SLOGAN_1 = "Türkçenin Yıldızları"
+SLOGAN_2 = "Her Kelime Bir Yıldız. Her Yıldız Bir Kelime"
 # Görselin hangi yüksekliğinden kırpılacağı (0 = üst, 1 = alt); varsayılan orta.
 FOCUS = {"01": 0.47, "02": 0.45, "03": 0.45, "05": 0.42, "06": 0.75, "07": 0.72}
 # Dikey kompozisyonu kırpılınca bozulanlar: tam görsel ortada, kenarlar bulanık uzantıyla dolu.
@@ -42,6 +44,16 @@ FIT = {"04", "08", "09", "10"}
 
 def font(w, size):
     return ImageFont.truetype(FONT[w], size)
+
+
+def star(cx, cy, r, ri):
+    import math
+    pts = []
+    for i in range(10):
+        a = -math.pi / 2 + i * math.pi / 5
+        rr = r if i % 2 == 0 else ri
+        pts.append((cx + rr * math.cos(a), cy + rr * math.sin(a)))
+    return pts
 
 
 def hex2rgb(h):
@@ -99,7 +111,11 @@ def card(row, out):
     # üst bant
     d.rectangle([0, 0, W, BAND], fill=color)
     d.text((M, BAND // 2), tr_upper(row["kategori"]), font=font("Black", 78), fill="white", anchor="lm")
-    d.text((W - M, BAND // 2), f"{nn}/30", font=font("Bold", 70), fill="white", anchor="rm")
+    fn = font("Bold", 70)
+    num = f"{nn}/30"
+    d.text((W - M, BAND // 2), num, font=fn, fill="white", anchor="rm")
+    sx = W - M - d.textlength(num, font=fn) - 22 - 38          # yıldız: sayının solunda
+    d.polygon(star(sx, BAND // 2 - 2, 38, 16), fill=(255, 205, 60))
 
     # görsel
     src = Image.open(ROOT / "images" / f"{nn}.png").convert("RGB")
@@ -142,14 +158,19 @@ def card(row, out):
     tx = M
     tw = qx - M - 30
     d.line([tx, qy - 20, qx - 40, qy - 20], fill=color, width=5)
-    fc = font("Black", 84)
-    d.text((tx, qy + 20), "Okut,", font=fc, fill=INK, anchor="lt")
-    d.text((tx, qy + 120), "izle ve dinle!", font=fc, fill=INK, anchor="lt")
-    ax, ay = qx - 50, qy + 165              # ok: çizgi + üçgen (fontta → glifi yok)
-    d.line([ax - 120, ay, ax - 30, ay], fill=color, width=14)
-    d.polygon([(ax, ay), (ax - 46, ay - 32), (ax - 46, ay + 32)], fill=color)
-    ff = font("Regular", 34)
-    d.text((tx, H - M), FOOT, font=ff, fill=(120, 112, 125), anchor="lb")
+    fc = font("Black", 80)
+    d.text((tx, qy + 14), CTA, font=fc, fill=INK, anchor="lt")
+    ax, ay = qx - 40, qy + 62               # ok: çizgi + üçgen (fontta → glifi yok)
+    ex = tx + d.textlength(CTA, font=fc) + 40
+    d.line([ex, ay, ax - 30, ay], fill=color, width=12)
+    d.polygon([(ax, ay), (ax - 42, ay - 28), (ax - 42, ay + 28)], fill=color)
+    fs = font("Bold", 54)
+    d.polygon(star(tx + 26, qy + 168, 26, 11), fill=(255, 205, 60))
+    d.text((tx + 66, qy + 168), SLOGAN_1, font=fs, fill=color, anchor="lm")
+    fl = font("Regular", 40)
+    while d.textlength(SLOGAN_2, font=fl) > qx - tx - 40:
+        fl = font("Regular", fl.size - 1)
+    d.text((tx, H - M), SLOGAN_2, font=fl, fill=INK, anchor="lb")
     img.save(out, dpi=(DPI, DPI))
 
 
