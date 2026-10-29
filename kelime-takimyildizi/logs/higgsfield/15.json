@@ -1,0 +1,30 @@
+{
+  "id": "15",
+  "kelime": "Payidar",
+  "zaman": "2026-10-29T17:12:55",
+  "bitis": "2026-10-29T17:14:07",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. a strong tree with deep visible roots under the ground",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 4215
+  },
+  "request_id": "01a188a6-8195-74fc-81a0-c9057ceb983e",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a188a6-8195-74fc-81a0-c9057ceb983e",
+    "status_url": "https://api.higgsfield.ai/requests/01a188a6-8195-74fc-81a0-c9057ceb983e/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a188a6-8195-74fc-81a0-c9057ceb983e/cancel",
+    "expires_at": "2026-11-05T17:13:59.249688+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a6-8195-74fc-81a0-c9057ceb983e/489449d9-55df-456f-8a7a-bca31024066d.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "images/15.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a6-8195-74fc-81a0-c9057ceb983e/489449d9-55df-456f-8a7a-bca31024066d.png"
+}

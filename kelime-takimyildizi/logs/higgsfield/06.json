@@ -1,0 +1,30 @@
+{
+  "id": "06",
+  "kelime": "Yâren",
+  "zaman": "2026-10-29T17:11:37",
+  "bitis": "2026-10-29T17:12:50",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. two friends seen from behind on a park bench with two tulip-shaped tea glasses",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 4206
+  },
+  "request_id": "01a188a5-529a-7e08-a350-e2b696126e60",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a188a5-529a-7e08-a350-e2b696126e60",
+    "status_url": "https://api.higgsfield.ai/requests/01a188a5-529a-7e08-a350-e2b696126e60/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a188a5-529a-7e08-a350-e2b696126e60/cancel",
+    "expires_at": "2026-11-05T17:12:39.759910+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a5-529a-7e08-a350-e2b696126e60/db129076-475f-4127-871f-5d86e301eba1.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "images/06.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a5-529a-7e08-a350-e2b696126e60/db129076-475f-4127-871f-5d86e301eba1.png"
+}

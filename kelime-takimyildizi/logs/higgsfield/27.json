@@ -1,0 +1,30 @@
+{
+  "id": "27",
+  "kelime": "Dayanışma",
+  "zaman": "2026-10-29T17:19:19",
+  "bitis": "2026-10-29T17:20:17",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. three hands of different children clasped together",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 9127
+  },
+  "request_id": "01a188ac-5fa4-7aa7-9f90-eef3dc553c56",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a188ac-5fa4-7aa7-9f90-eef3dc553c56",
+    "status_url": "https://api.higgsfield.ai/requests/01a188ac-5fa4-7aa7-9f90-eef3dc553c56/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a188ac-5fa4-7aa7-9f90-eef3dc553c56/cancel",
+    "expires_at": "2026-11-05T17:20:12.370353+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188ac-5fa4-7aa7-9f90-eef3dc553c56/00f7ff1f-69c9-4a73-acf0-ad1ee7c69462.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "images/27.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188ac-5fa4-7aa7-9f90-eef3dc553c56/00f7ff1f-69c9-4a73-acf0-ad1ee7c69462.png"
+}

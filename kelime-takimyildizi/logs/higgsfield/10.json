@@ -1,0 +1,30 @@
+{
+  "id": "10",
+  "kelime": "Destan",
+  "zaman": "2026-10-29T17:12:36",
+  "bitis": "2026-10-29T17:13:48",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. an open old book with a small glowing sword rising from its pages",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 4210
+  },
+  "request_id": "01a188a6-35f0-7593-87e2-2b5ba682b3e8",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a188a6-35f0-7593-87e2-2b5ba682b3e8",
+    "status_url": "https://api.higgsfield.ai/requests/01a188a6-35f0-7593-87e2-2b5ba682b3e8/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a188a6-35f0-7593-87e2-2b5ba682b3e8/cancel",
+    "expires_at": "2026-11-05T17:13:43.887552+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a6-35f0-7593-87e2-2b5ba682b3e8/1dd73ec0-a868-4a3c-8f5e-b1d63150da90.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "images/10.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a6-35f0-7593-87e2-2b5ba682b3e8/1dd73ec0-a868-4a3c-8f5e-b1d63150da90.png"
+}

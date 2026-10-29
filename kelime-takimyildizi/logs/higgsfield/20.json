@@ -1,0 +1,30 @@
+{
+  "id": "20",
+  "kelime": "Diyar",
+  "zaman": "2026-10-29T17:14:06",
+  "bitis": "2026-10-29T17:15:33",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. a winding road leading toward distant mountains under a big sky",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 4220
+  },
+  "request_id": "01a188a7-945b-7b3b-8783-e789ea13e1e6",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a188a7-945b-7b3b-8783-e789ea13e1e6",
+    "status_url": "https://api.higgsfield.ai/requests/01a188a7-945b-7b3b-8783-e789ea13e1e6/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a188a7-945b-7b3b-8783-e789ea13e1e6/cancel",
+    "expires_at": "2026-11-05T17:15:19.284535+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a7-945b-7b3b-8783-e789ea13e1e6/a018a551-f966-49f3-8b69-762a722fc837.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "images/20.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a7-945b-7b3b-8783-e789ea13e1e6/a018a551-f966-49f3-8b69-762a722fc837.png"
+}

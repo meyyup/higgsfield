@@ -1,0 +1,30 @@
+{
+  "id": "07",
+  "kelime": "Konuk",
+  "zaman": "2026-10-29T17:11:37",
+  "bitis": "2026-10-29T17:12:35",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. an open front door with a pair of guest slippers waiting at the doorstep",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 4207
+  },
+  "request_id": "01a188a5-527c-7164-bfcf-9187e346ec1c",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a188a5-527c-7164-bfcf-9187e346ec1c",
+    "status_url": "https://api.higgsfield.ai/requests/01a188a5-527c-7164-bfcf-9187e346ec1c/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a188a5-527c-7164-bfcf-9187e346ec1c/cancel",
+    "expires_at": "2026-11-05T17:12:34.933532+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a5-527c-7164-bfcf-9187e346ec1c/cabc9ff4-8fca-46a6-a9cf-a8ef26279a1c.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "images/07.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a5-527c-7164-bfcf-9187e346ec1c/cabc9ff4-8fca-46a6-a9cf-a8ef26279a1c.png"
+}

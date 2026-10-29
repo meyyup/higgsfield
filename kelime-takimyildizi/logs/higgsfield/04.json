@@ -1,0 +1,30 @@
+{
+  "id": "04",
+  "kelime": "Töre",
+  "zaman": "2026-10-29T17:11:37",
+  "bitis": "2026-10-29T17:13:06",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. an old hand passing an old book to a small child's hand",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 4204
+  },
+  "request_id": "01a188a5-52af-775d-8d77-c0b29365f0a3",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a188a5-52af-775d-8d77-c0b29365f0a3",
+    "status_url": "https://api.higgsfield.ai/requests/01a188a5-52af-775d-8d77-c0b29365f0a3/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a188a5-52af-775d-8d77-c0b29365f0a3/cancel",
+    "expires_at": "2026-11-05T17:13:01.447235+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a5-52af-775d-8d77-c0b29365f0a3/d9571a29-02e8-469f-bf0c-164a9952cd94.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "images/04.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a5-52af-775d-8d77-c0b29365f0a3/d9571a29-02e8-469f-bf0c-164a9952cd94.png"
+}
