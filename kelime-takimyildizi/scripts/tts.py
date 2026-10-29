@@ -23,7 +23,7 @@ import urllib.request
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 API = "https://api.elevenlabs.io/v1"
 MODEL = "eleven_multilingual_v2"          # /v1/models: Türkçe destekli, zaman damgası destekli
-VOICE_ID = "5nr6ATQepuidiLb6OT3B"         # Ozan Karaca - Rich, Warm and Calm (ses kütüphanesi, klon değil)
+VOICE_ID = os.environ.get("TTS_VOICE_ID", "5nr6ATQepuidiLb6OT3B")  # varsayılan: Ozan Karaca (ses kütüphanesi, klon değil)
 SETTINGS = {"stability": 0.55, "similarity_boost": 0.75, "style": 0.15, "use_speaker_boost": True}
 WORD_SPEED, REST_SPEED = 0.82, 0.95
 PAUSE = 0.6                                # kelimeden sonra sessizlik (sn)
@@ -63,7 +63,7 @@ def dur(p):
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(p)]))
 
 
-def make(row):
+def make(row, outdir):
     nn, word = row["id"], row["kelime"]
     text = row["seslendirme"]
     assert text.startswith(word + "."), (nn, text)
@@ -78,7 +78,7 @@ def make(row):
     pb.write_bytes(base64.b64decode(b["audio_base64"]))
     da = dur(pa)
 
-    out = ROOT / "audio" / f"{nn}.mp3"
+    out = outdir / f"{nn}.mp3"
     cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(pa), "-i", str(pb),
            "-filter_complex",
            f"[0:a]aresample={SR},apad=pad_dur={PAUSE}[a];[1:a]aresample={SR}[b];[a][b]concat=n=2:v=0:a=1[o]",
@@ -98,7 +98,7 @@ def make(row):
         "uretim": dt.datetime.now().isoformat(timespec="seconds"),
         "alignment": {"characters": chars, "start": starts, "end": ends},
     }
-    (ROOT / "audio" / f"{nn}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
+    (outdir / f"{nn}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     with (ROOT / "logs" / "tts.log").open("a", encoding="utf-8") as f:
         f.write(f"{meta['uretim']} {nn} {word} model={MODEL} voice={VOICE_ID} sure={meta['sure_sn']}\n")
     print(f"{nn} {word}: {meta['sure_sn']} sn", flush=True)
@@ -109,16 +109,19 @@ def main():
     ap.add_argument("ids", nargs="*")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--outdir", default="audio", help="deneme sesleri için ör. work/ses_deneme/<ad>")
     a = ap.parse_args()
+    outdir = ROOT / a.outdir
+    outdir.mkdir(parents=True, exist_ok=True)
     (ROOT / "logs").mkdir(exist_ok=True)
     (ROOT / "audio").mkdir(exist_ok=True)
     for r in rows():
         if not a.all and r["id"] not in a.ids:
             continue
-        if (ROOT / "audio" / f"{r['id']}.mp3").exists() and not a.force:
+        if (outdir / f"{r['id']}.mp3").exists() and not a.force:
             print(f"{r['id']}: var, atlandı")
             continue
-        make(r)
+        make(r, outdir)
 
 
 if __name__ == "__main__":
