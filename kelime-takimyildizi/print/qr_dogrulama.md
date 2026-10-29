@@ -2,14 +2,6 @@
 
 ## links.csv sorunları
 
-- 03 Toy: URL boş
-- 04 Töre: URL boş
-- 05 Yadigâr: URL boş
-- 06 Yâren: URL boş
-- 07 Konuk: URL boş
-- 08 Ocak: URL boş
-- 09 Kervan: URL boş
-- 10 Destan: URL boş
 - 11 Çerağ: URL boş
 - 12 Neva: URL boş
 - 13 Cenk: URL boş
@@ -35,5 +27,13 @@
 |---|---|---|---|---|---|---|
 | 01 | İmece | https://youtube.com/shorts/I6QE_G15f6U | 4 | 0.61 | ✓ | ✓ |
 | 02 | Oba | https://youtube.com/shorts/TUPmG3PweNY | 4 | 0.61 | ✓ | ✓ |
+| 03 | Toy | https://youtube.com/shorts/cCctKOFcDg4 | 4 | 0.61 | ✓ | ✓ |
+| 04 | Töre | https://youtube.com/shorts/siUwgzIkIfQ | 4 | 0.61 | ✓ | ✓ |
+| 05 | Yadigâr | https://youtube.com/shorts/8qgghVCYztA | 4 | 0.61 | ✓ | ✓ |
+| 06 | Yâren | https://youtube.com/shorts/eASvsz6cMFM | 4 | 0.61 | ✓ | ✓ |
+| 07 | Konuk | https://youtube.com/shorts/otDSiGV8DQA | 4 | 0.61 | ✓ | ✓ |
+| 08 | Ocak | https://youtube.com/shorts/LlpXpaF6KAE | 4 | 0.61 | ✓ | ✓ |
+| 09 | Kervan | https://youtube.com/shorts/IIbJR8dMBzs | 4 | 0.61 | ✓ | ✓ |
+| 10 | Destan | https://youtube.com/shorts/SFYhuIAxKA4 | 4 | 0.61 | ✓ | ✓ |
 
-Sonuç: 2/30 QR geri okumada birebir doğru URL'yi verdi. links.csv'de 28 sorun var (yukarıda).
+Sonuç: 10/30 QR geri okumada birebir doğru URL'yi verdi. links.csv'de 20 sorun var (yukarıda).
