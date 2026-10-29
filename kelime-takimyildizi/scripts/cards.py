@@ -35,9 +35,10 @@ INK = (45, 40, 50)
 QR_PX = 295               # 25 mm @ 300 dpi
 CTA = "Oku, İzle ve Dinle"
 # Görselin hangi yüksekliğinden kırpılacağı (0 = üst, 1 = alt); varsayılan orta.
-FOCUS = {"01": 0.47, "02": 0.45, "03": 0.45, "05": 0.42, "06": 0.75, "07": 0.72}
+FOCUS = {"01": 0.47, "02": 0.45, "03": 0.45, "05": 0.42, "06": 0.75, "07": 0.72,
+         "11": 0.6, "14": 0.66, "17": 0.38, "19": 0.42, "20": 0.62}
 # Dikey kompozisyonu kırpılınca bozulanlar: tam görsel ortada, kenarlar bulanık uzantıyla dolu.
-FIT = {"04", "08", "09", "10"}
+FIT = {"04", "08", "09", "10", "12", "13", "15", "16", "18"}
 
 
 def font(w, size):
@@ -149,8 +150,19 @@ def card(row, out):
             yy += int(size * 1.32)
 
     # alt bölge: QR + çağrı + künye
-    qr = Image.open(ROOT / "print" / "qr" / f"{nn}.png").convert("RGB")
-    assert qr.size == (QR_PX, QR_PX), qr.size
+    qr_path = ROOT / "print" / "qr" / f"{nn}.png"
+    if has_qr(nn):
+        qr = Image.open(qr_path).convert("RGB")
+        assert qr.size == (QR_PX, QR_PX), qr.size
+    else:                                   # link henüz yok: yer tutucu kutu
+        qr = Image.new("RGB", (QR_PX, QR_PX), "white")
+        qd = ImageDraw.Draw(qr)
+        for i in range(0, QR_PX, 24):       # kesik çerçeve
+            for seg in ([i, 0, i + 12, 0], [i, QR_PX - 1, i + 12, QR_PX - 1],
+                        [0, i, 0, i + 12], [QR_PX - 1, i, QR_PX - 1, i + 12]):
+                qd.line(seg, fill=(150, 150, 150), width=4)
+        qd.text((QR_PX // 2, QR_PX // 2 - 26), "QR", font=font("Black", 64), fill=(150, 150, 150), anchor="mm")
+        qd.text((QR_PX // 2, QR_PX // 2 + 40), "yakında", font=font("Bold", 40), fill=(150, 150, 150), anchor="mm")
     qx, qy = W - M - QR_PX, H - M - QR_PX
     img.paste(qr, (qx, qy))
     tx = M
@@ -166,6 +178,13 @@ def card(row, out):
     img.save(out, dpi=(DPI, DPI))
 
 
+LINKS = {}
+
+
+def has_qr(nn):
+    return bool(LINKS.get(nn)) and (ROOT / "print" / "qr" / f"{nn}.png").exists()
+
+
 def place(c, path, x, y):
     """Kart: görsel JPEG (küçük dosya) + QR kayıpsız PNG, tam yerine (25 mm)."""
     jpg = ROOT / "work" / "cards_jpg" / f"{path.stem}.jpg"
@@ -173,8 +192,9 @@ def place(c, path, x, y):
     Image.open(path).convert("RGB").save(jpg, quality=92, dpi=(DPI, DPI))
     c.drawImage(str(jpg), x, y, CW_MM * mm, CH_MM * mm)
     px = 25.4 / DPI * mm
-    c.drawImage(str(ROOT / "print" / "qr" / f"{path.stem}.png"),
-                x + (W - M - QR_PX) * px, y + M * px, QR_PX * px, QR_PX * px)
+    if has_qr(path.stem):
+        c.drawImage(str(ROOT / "print" / "qr" / f"{path.stem}.png"),
+                    x + (W - M - QR_PX) * px, y + M * px, QR_PX * px, QR_PX * px)
 
 
 def pdf(paths, out_a5, out_a4):
@@ -207,10 +227,15 @@ def pdf(paths, out_a5, out_a4):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("ids", nargs="*")
+    ap.add_argument("--to", help="bu id'ye kadar tüm kartlar; linki olmayanlarda 'QR yakında' kutusu")
     a = ap.parse_args()
-    links = {r["id"]: r["url"].strip() for r in csv.DictReader((ROOT / "links.csv").open(encoding="utf-8-sig"))}
+    LINKS.update({r["id"]: r["url"].strip()
+                  for r in csv.DictReader((ROOT / "links.csv").open(encoding="utf-8-sig"))})
     rows = [r for r in csv.DictReader((ROOT / "kelimeler.csv").open(encoding="utf-8"))
-            if links.get(r["id"]) and (not a.ids or r["id"] in a.ids)]
+            if (r["id"] <= a.to if a.to else LINKS.get(r["id"])) and (not a.ids or r["id"] in a.ids)]
+    missing = [r["id"] for r in rows if not has_qr(r["id"])]
+    if missing:
+        print("QR yok (yer tutucu):", " ".join(missing))
     outd = ROOT / "cards" / "png"
     outd.mkdir(parents=True, exist_ok=True)
     paths = []
