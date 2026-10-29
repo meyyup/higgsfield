@@ -34,8 +34,6 @@ BG = (255, 251, 243)
 INK = (45, 40, 50)
 QR_PX = 295               # 25 mm @ 300 dpi
 CTA = "Oku, İzle ve Dinle"
-SLOGAN_1 = "Türkçenin Yıldızları"
-SLOGAN_2 = "Her Kelime Bir Yıldız. Her Yıldız Bir Kelime"
 # Görselin hangi yüksekliğinden kırpılacağı (0 = üst, 1 = alt); varsayılan orta.
 FOCUS = {"01": 0.47, "02": 0.45, "03": 0.45, "05": 0.42, "06": 0.75, "07": 0.72}
 # Dikey kompozisyonu kırpılınca bozulanlar: tam görsel ortada, kenarlar bulanık uzantıyla dolu.
@@ -158,19 +156,13 @@ def card(row, out):
     tx = M
     tw = qx - M - 30
     d.line([tx, qy - 20, qx - 40, qy - 20], fill=color, width=5)
-    fc = font("Black", 80)
-    d.text((tx, qy + 14), CTA, font=fc, fill=INK, anchor="lt")
-    ax, ay = qx - 40, qy + 62               # ok: çizgi + üçgen (fontta → glifi yok)
-    ex = tx + d.textlength(CTA, font=fc) + 40
-    d.line([ex, ay, ax - 30, ay], fill=color, width=12)
-    d.polygon([(ax, ay), (ax - 42, ay - 28), (ax - 42, ay + 28)], fill=color)
-    fs = font("Bold", 54)
-    d.polygon(star(tx + 26, qy + 168, 26, 11), fill=(255, 205, 60))
-    d.text((tx + 66, qy + 168), SLOGAN_1, font=fs, fill=color, anchor="lm")
-    fl = font("Regular", 40)
-    while d.textlength(SLOGAN_2, font=fl) > qx - tx - 40:
-        fl = font("Regular", fl.size - 1)
-    d.text((tx, H - M), SLOGAN_2, font=fl, fill=INK, anchor="lb")
+    fc = font("Black", 92)
+    cy = qy + QR_PX // 2                    # QR'ın dikey ortası
+    d.text((tx, cy), CTA, font=fc, fill=INK, anchor="lm")
+    ax = qx - 40                            # ok: çizgi + üçgen (fontta → glifi yok)
+    ex = tx + d.textlength(CTA, font=fc) + 44
+    d.line([ex, cy, ax - 34, cy], fill=color, width=14)
+    d.polygon([(ax, cy), (ax - 48, cy - 32), (ax - 48, cy + 32)], fill=color)
     img.save(out, dpi=(DPI, DPI))
 
 
