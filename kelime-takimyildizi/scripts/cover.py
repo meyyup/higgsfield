@@ -26,6 +26,7 @@ SERIF = F / "CormorantGaramond-SemiBold.ttf"
 SERIF_I = F / "CormorantGaramond-SemiBoldItalic.ttf"
 SANS_B = F / "NotoSans-Bold.ttf"
 QR_PX = 295                             # 25 mm
+AUTHOR = "Mert Eyyüpoğlu"
 
 # Kart renklerinin koyu zemin üzerinde okunacak açık tonları
 CATS = {
@@ -50,6 +51,11 @@ LAYOUT = {
                      edges=[(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 0)],
                      label=(930, 1455)),
 }
+
+LIFT = 70                                   # başlıktaki iki satır kalkınca her şey bu kadar yukarı alındı
+for _lay in LAYOUT.values():
+    _lay["pts"] = [(x, y - LIFT, side) for x, y, side in _lay["pts"]]
+    _lay["label"] = (_lay["label"][0], _lay["label"][1] - LIFT)
 
 
 def font(path, size):
@@ -83,7 +89,9 @@ def background():
     src = Image.open(ROOT / "cover" / "kapak_arka_D.png").convert("RGB")
     ill = src.resize((W, round(src.height * W / src.width)), Image.LANCZOS)
     bg = Image.new("RGB", (W, H))
-    bg.paste(ill, (0, H - ill.height))               # alttan hizalı; üstteki fazla gök kırpılır
+    bg.paste(ill, (0, H - ill.height - LIFT))
+    strip = ill.crop((0, ill.height - LIFT, W, ill.height)).transpose(Image.FLIP_TOP_BOTTOM)
+    bg.paste(strip, (0, H - LIFT))                  # yukarı alınca alttaki boşluğu çimenle doldur               # alttan hizalı; üstteki fazla gök kırpılır
     bg = bg.convert("RGBA")
     # başlık okunurluğu için üstte hafif koyulaştırma
     shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -133,8 +141,6 @@ def titles(img):
     sw = d.textlength(sub, font=fs) / 2
     star4(d, cx - sw - 60, 555, 22, GOLD)
     star4(d, cx + sw + 60, 555, 22, GOLD)
-    d.line([cx - 150, 622, cx + 150, 622], fill=GOLD, width=3)
-    spaced(d, (cx, 668), "DİLİMİZİN ZENGİNLİKLERİ PROJESİ", font(SANS_B, 32), CREAM, 7)
 
 
 def bottom(img):
@@ -145,16 +151,22 @@ def bottom(img):
     for y in range(H - 500, H):
         bd.line([(0, y), (W, y)], fill=(5, 12, 30, int(120 * (y - (H - 500)) / 500)))
     img.alpha_composite(band)
-    fsl = font(SERIF_I, 72)
-    d.text((BIND, H - 300), "Her yıldız bir kelime.", font=fsl, fill=CREAM, anchor="lm")
-    d.text((BIND, H - 205), "Her kelime bir yıldız.", font=fsl, fill=CREAM, anchor="lm")
-    qr_block(img)
+    # alt sıra (simetrik): "Her kelime / bir yıldız." · QR · "Her yıldız / bir kelime."
+    cx = W // 2
+    qy = H - 175 - QR_PX
+    qr_block(img, cx - QR_PX // 2, qy)
+    fsl = font(SERIF_I, 78)
+    my = qy + QR_PX // 2
+    for side, (l1, l2) in ((-1, ("Her kelime", "bir yıldız.")), (1, ("Her yıldız", "bir kelime."))):
+        x = cx + side * 470
+        d.text((x, my - 48), l1, font=fsl, fill=CREAM, anchor="mm")
+        d.text((x, my + 48), l2, font=fsl, fill=CREAM, anchor="mm")
+    spaced(d, (cx, H - 68), AUTHOR, font(SERIF, 62), GOLD, 4)
 
 
-def qr_block(img):
-    """Giriş videosu QR'ı (sağ alt): cover/giris_link.txt varsa gerçek QR, yoksa yer tutucu."""
+def qr_block(img, qx=W - 120 - QR_PX, qy=H - 170 - QR_PX):
+    """Giriş videosu QR'ı (varsayılan sağ alt): cover/giris_link.txt varsa gerçek QR, yoksa yer tutucu."""
     d = ImageDraw.Draw(img)
-    qx, qy = W - 120 - QR_PX, H - 170 - QR_PX
     link_file = ROOT / "cover" / "giris_link.txt"
     if link_file.exists() and link_file.read_text().strip():
         q = qrcode.QRCode(error_correction=ERROR_CORRECT_Q, border=4, box_size=1)
@@ -168,7 +180,7 @@ def qr_block(img):
                         [qx, qy + i, qx, qy + i + 13], [qx + QR_PX, qy + i, qx + QR_PX, qy + i + 13]):
                 d.line(seg, fill=GOLD, width=4)
         d.text((qx + QR_PX / 2, qy + QR_PX / 2), "QR", font=font(SANS_B, 60), fill=GOLD, anchor="mm")
-    spaced(d, (qx + QR_PX / 2, qy + QR_PX + 45), "GİRİŞ VİDEOSU", font(SANS_B, 28), CREAM, 5)
+    spaced(d, (qx + QR_PX / 2, qy + QR_PX + 40), "GİRİŞ VİDEOSU", font(SANS_B, 26), CREAM, 5)
 
 
 def main():
