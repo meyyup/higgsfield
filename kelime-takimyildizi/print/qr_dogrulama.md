@@ -2,16 +2,6 @@
 
 ## links.csv sorunları
 
-- 11 Çerağ: URL boş
-- 12 Neva: URL boş
-- 13 Cenk: URL boş
-- 14 Saye: URL boş
-- 15 Payidar: URL boş
-- 16 Nazenin: URL boş
-- 17 Sükût: URL boş
-- 18 Serüven: URL boş
-- 19 Müjde: URL boş
-- 20 Diyar: URL boş
 - 21 Vefa: URL boş
 - 22 Tevazu: URL boş
 - 23 Sebat: URL boş
@@ -35,5 +25,15 @@
 | 08 | Ocak | https://youtube.com/shorts/LlpXpaF6KAE | 4 | 0.61 | ✓ | ✓ |
 | 09 | Kervan | https://youtube.com/shorts/IIbJR8dMBzs | 4 | 0.61 | ✓ | ✓ |
 | 10 | Destan | https://youtube.com/shorts/SFYhuIAxKA4 | 4 | 0.61 | ✓ | ✓ |
+| 11 | Çerağ | https://youtube.com/shorts/p33MidBtJsM | 4 | 0.61 | ✓ | ✓ |
+| 12 | Neva | https://youtube.com/shorts/mJsxGNV6UOU | 4 | 0.61 | ✓ | ✓ |
+| 13 | Cenk | https://youtube.com/shorts/KR_3D96ygNs | 4 | 0.61 | ✓ | ✓ |
+| 14 | Saye | https://youtube.com/shorts/4rNmIyCsa00 | 4 | 0.61 | ✓ | ✓ |
+| 15 | Payidar | https://youtube.com/shorts/BOAGA_NeyIY | 4 | 0.61 | ✓ | ✓ |
+| 16 | Nazenin | https://youtube.com/shorts/zpt55f-q__U | 4 | 0.61 | ✓ | ✓ |
+| 17 | Sükût | https://youtube.com/shorts/X_dcFdCmNhk | 4 | 0.61 | ✓ | ✓ |
+| 18 | Serüven | https://youtube.com/shorts/8Vs3vjFijwk | 4 | 0.61 | ✓ | ✓ |
+| 19 | Müjde | https://youtube.com/shorts/wmKu-oJ5Bcg | 4 | 0.61 | ✓ | ✓ |
+| 20 | Diyar | https://youtube.com/shorts/woMCYBKRhLY | 4 | 0.61 | ✓ | ✓ |
 
-Sonuç: 10/30 QR geri okumada birebir doğru URL'yi verdi. links.csv'de 20 sorun var (yukarıda).
+Sonuç: 20/30 QR geri okumada birebir doğru URL'yi verdi. links.csv'de 10 sorun var (yukarıda).
