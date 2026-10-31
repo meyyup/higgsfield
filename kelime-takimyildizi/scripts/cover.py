@@ -148,7 +148,12 @@ def bottom(img):
     fsl = font(SERIF_I, 72)
     d.text((BIND, H - 300), "Her yıldız bir kelime.", font=fsl, fill=CREAM, anchor="lm")
     d.text((BIND, H - 205), "Her kelime bir yıldız.", font=fsl, fill=CREAM, anchor="lm")
-    # giriş videosu QR
+    qr_block(img)
+
+
+def qr_block(img):
+    """Giriş videosu QR'ı (sağ alt): cover/giris_link.txt varsa gerçek QR, yoksa yer tutucu."""
+    d = ImageDraw.Draw(img)
     qx, qy = W - 120 - QR_PX, H - 170 - QR_PX
     link_file = ROOT / "cover" / "giris_link.txt"
     if link_file.exists() and link_file.read_text().strip():
