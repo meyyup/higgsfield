@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import cover as C  # noqa: E402
-from build_shorts import chunks  # noqa: E402
+import re
 
 ROOT = C.ROOT
 W, H, FPS = 1080, 1920, 30
@@ -34,6 +34,22 @@ SCENES_YZ = [
 SCENES_MERT = SCENES_YZ[:1] + [
     "Bu sözlükte, Türkçenin otuz güzel kelimesini üç takımyıldızda topladım: Kültürümüz, Eski Sözcükler ve Değerler.",
 ] + SCENES_YZ[2:]
+
+
+def chunks(text, maxw=7):
+    """Altyazı parçaları: noktalama (, ; : . ! ?) sınırlarından böl, kısa parçaları en çok 7 kelimeye kadar birleştir."""
+    parts = [(m.start(), m.end()) for m in re.finditer(r"[^,;:.!?]+[,;:.!?]*", text) if m.group().strip()]
+    out, cur = [], None
+    for a, b in parts:
+        a += len(text[a:b]) - len(text[a:b].lstrip())
+        if cur and text[cur[0]:cur[1]].rstrip()[-1] not in ".!?" and len(text[cur[0]:b].split()) <= maxw:
+            cur = (cur[0], b)
+        else:
+            if cur:
+                out.append(cur)
+            cur = (a, b)
+    out.append(cur)
+    return out
 
 
 def work(variant):
@@ -72,8 +88,36 @@ def ease(t):
     return t * t * (3 - 2 * t)
 
 
+OPENING = ROOT / "cover" / "giris" / "kitap_acilis.mp4"   # Higgsfield: çocuk kitabı açar, yıldızlar yükselir
+
+
+class Opening:
+    """Açılış videosunu kare kare okur (sıralı erişim); bittiğinde None döner."""
+
+    def __init__(self):
+        self.size = (W + 68, H + 120)
+        self.proc = None
+        if OPENING.exists():
+            self.dur = dur(OPENING)
+            self.proc = subprocess.Popen(
+                ["ffmpeg", "-v", "error", "-i", str(OPENING), "-vf",
+                 f"fps={FPS},scale={self.size[0]}:{self.size[1]}:flags=lanczos", "-f", "rawvideo",
+                 "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+        self.last = None
+
+    def frame(self):
+        if not self.proc:
+            return None
+        raw = self.proc.stdout.read(self.size[0] * self.size[1] * 3)
+        if len(raw) < self.size[0] * self.size[1] * 3:
+            self.proc = None
+            return None
+        self.last = Image.frombytes("RGB", self.size, raw)
+        return self.last
+
+
 def bg_base():
-    src = Image.open(ROOT / "cover" / "kapak_arka_D.png").convert("RGB")
+    src = Image.open(ROOT / "cover" / "giris" / "bitis.png").convert("RGB")   # açılış videosunun son karesi
     s = (H + 120) / src.height                       # yakınlaşma payı
     im = src.resize((round(src.width * s), H + 120), Image.LANCZOS)
     x0 = (im.width - (W + 68)) // 2
@@ -280,9 +324,19 @@ def montaj(variant):
          "-i", "-", "-i", str(audio), "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "medium",
          "-crf", "19", "-pix_fmt", "yuv420p", "-c:a", "copy", "-shortest", "-movflags", "+faststart", str(out)],
         stdin=subprocess.PIPE)
+    opening = Opening()
+    switch = None
     for fi in range(n):
         t = fi / FPS
-        fr = bg_frame(base, t, total)
+        vf = opening.frame()
+        if vf is not None:
+            fr = bg_frame(vf, t, total)
+        else:
+            if switch is None:
+                switch = t
+            fr = bg_frame(base, t, total)
+            if opening.last is not None and t - switch < 0.6:   # son kareden sabit görsele yumuşak geçiş
+                fr = Image.blend(bg_frame(opening.last, t, total), fr, ease((t - switch) / 0.6))
         # siyahtan açılış
         # başlık: sahne 1–2 ve 5'te
         ta = ease((t - 0.3) / 1.2) * (1 - ease((t - s3s) / 0.5)) + ease((t - s5s) / 0.8)

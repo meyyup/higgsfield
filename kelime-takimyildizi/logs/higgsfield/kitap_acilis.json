@@ -1,0 +1,27 @@
+{
+  "zaman": "2026-10-31T17:37:25",
+  "bitis": "2026-10-31T17:40:55",
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "prompt": "Children's picture book illustration, soft colored-pencil style, static camera, no camera movement. A small child sitting on a grassy hill at night, seen from behind, slowly opens the closed book on their lap. Warm golden light begins to glow from the open pages, and tiny golden sparks of light slowly rise from the book, floating upward into the deep blue starry sky like new stars. Gentle, magical, calm motion. No text.",
+  "parametreler": {
+    "duration": 8,
+    "resolution": "720p",
+    "generate_audio": false,
+    "image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/5179c62e-27c3-4ce2-bef2-c5e9c1434d68.png",
+    "end_image_url": "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/120659b0-a3b3-44ac-affb-24d8801bc4b3.png"
+  },
+  "request_id": "01a19309-a63b-70c3-9249-42662d0a18a1",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a19309-a63b-70c3-9249-42662d0a18a1",
+    "status_url": "https://api.higgsfield.ai/requests/01a19309-a63b-70c3-9249-42662d0a18a1/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a19309-a63b-70c3-9249-42662d0a18a1/cancel",
+    "expires_at": "2026-11-07T17:40:34.938234+00:00",
+    "video": {
+      "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a19309-a63b-70c3-9249-42662d0a18a1/1616ebd2-3576-43ff-86a4-0f9a758600d4.mp4"
+    }
+  },
+  "kaydedilen_dosya": "cover/giris/kitap_acilis.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a19309-a63b-70c3-9249-42662d0a18a1/1616ebd2-3576-43ff-86a4-0f9a758600d4.mp4"
+}

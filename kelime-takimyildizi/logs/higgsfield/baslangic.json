@@ -1,0 +1,30 @@
+{
+  "zaman": "2026-10-31T17:36:17",
+  "bitis": "2026-10-31T17:37:03",
+  "model": "alibaba/qwen-image-3/edit",
+  "prompt": "Keep the exact same picture, same style, same colors, same composition, same child, same hill and same sky. Only change: the book in the child's lap is CLOSED (a closed hardcover book resting on the lap, held with both hands), there is no glowing light from the book and there are NO golden sparks rising into the sky. The sky has only the calm small background stars. No text, no letters.",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "9:16",
+    "image_urls": [
+      "https://d3snorpfx4xhv8.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/d1ae9b43-bbcf-457d-947e-a02fa0a4356f.png"
+    ],
+    "seed": 501
+  },
+  "request_id": "01a19308-9df6-7610-8e55-f408298747e7",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a19308-9df6-7610-8e55-f408298747e7",
+    "status_url": "https://api.higgsfield.ai/requests/01a19308-9df6-7610-8e55-f408298747e7/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a19308-9df6-7610-8e55-f408298747e7/cancel",
+    "expires_at": "2026-11-07T17:37:02.513324+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a19308-9df6-7610-8e55-f408298747e7/aa00fe31-ae32-4ccc-b705-c141d0160d6d.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "cover/giris/baslangic.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a19308-9df6-7610-8e55-f408298747e7/aa00fe31-ae32-4ccc-b705-c141d0160d6d.png"
+}
