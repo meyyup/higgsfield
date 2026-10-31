@@ -1,30 +1,30 @@
 {
   "id": "29",
   "kelime": "Özveri",
-  "zaman": "2026-10-29T17:17:17",
-  "bitis": "2026-10-29T17:18:29",
+  "zaman": "2026-10-31T06:53:33",
+  "bitis": "2026-10-31T06:55:02",
   "model": "alibaba/qwen-image-3/text-to-image",
-  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. a hand offering half of a cake slice to someone",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. a child sitting at a desk finishing a colorful handmade school project with scissors and glue, a toy ball and game controller left unused on the floor, friends playing outside the window",
   "parametreler": {
     "resolution": "2k",
     "aspect_ratio": "9:16",
     "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
-    "seed": 4229
+    "seed": 7722
   },
-  "request_id": "01a188aa-7f11-7ae7-ab86-91e5e515bb89",
+  "request_id": "01a190bc-2fc6-7d6d-b860-361722470e0e",
   "durum": "completed",
   "yanit": {
     "status": "completed",
-    "request_id": "01a188aa-7f11-7ae7-ab86-91e5e515bb89",
-    "status_url": "https://api.higgsfield.ai/requests/01a188aa-7f11-7ae7-ab86-91e5e515bb89/status",
-    "cancel_url": "https://api.higgsfield.ai/requests/01a188aa-7f11-7ae7-ab86-91e5e515bb89/cancel",
-    "expires_at": "2026-11-05T17:18:25.135909+00:00",
+    "request_id": "01a190bc-2fc6-7d6d-b860-361722470e0e",
+    "status_url": "https://api.higgsfield.ai/requests/01a190bc-2fc6-7d6d-b860-361722470e0e/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a190bc-2fc6-7d6d-b860-361722470e0e/cancel",
+    "expires_at": "2026-11-07T06:54:50.965789+00:00",
     "images": [
       {
-        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188aa-7f11-7ae7-ab86-91e5e515bb89/73208800-ecc5-4d3a-928a-deed65fc502c.png"
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a190bc-2fc6-7d6d-b860-361722470e0e/da4ab183-adb6-4502-8c8c-fc53d84874c5.png"
       }
     ]
   },
   "kaydedilen_dosya": "images/29.png",
-  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188aa-7f11-7ae7-ab86-91e5e515bb89/73208800-ecc5-4d3a-928a-deed65fc502c.png"
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a190bc-2fc6-7d6d-b860-361722470e0e/da4ab183-adb6-4502-8c8c-fc53d84874c5.png"
 }

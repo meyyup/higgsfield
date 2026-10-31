@@ -1,30 +1,30 @@
 {
   "id": "22",
   "kelime": "Tevazu",
-  "zaman": "2026-10-29T17:14:08",
-  "bitis": "2026-10-29T17:15:20",
+  "zaman": "2026-10-31T06:53:33",
+  "bitis": "2026-10-31T06:55:02",
   "model": "alibaba/qwen-image-3/text-to-image",
-  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. a branch heavy with fruit bending gently downward",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. a child wearing a small gold medal standing in a row with teammates, smiling shyly and clapping for the others instead of showing off, everyone the same height side by side",
   "parametreler": {
     "resolution": "2k",
     "aspect_ratio": "9:16",
     "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
-    "seed": 4222
+    "seed": 7722
   },
-  "request_id": "01a188a7-9feb-7edf-b5d2-586a04bcb0d1",
+  "request_id": "01a190bc-2f30-722b-95d9-63b4a0d3f27b",
   "durum": "completed",
   "yanit": {
     "status": "completed",
-    "request_id": "01a188a7-9feb-7edf-b5d2-586a04bcb0d1",
-    "status_url": "https://api.higgsfield.ai/requests/01a188a7-9feb-7edf-b5d2-586a04bcb0d1/status",
-    "cancel_url": "https://api.higgsfield.ai/requests/01a188a7-9feb-7edf-b5d2-586a04bcb0d1/cancel",
-    "expires_at": "2026-11-05T17:15:09.219916+00:00",
+    "request_id": "01a190bc-2f30-722b-95d9-63b4a0d3f27b",
+    "status_url": "https://api.higgsfield.ai/requests/01a190bc-2f30-722b-95d9-63b4a0d3f27b/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a190bc-2f30-722b-95d9-63b4a0d3f27b/cancel",
+    "expires_at": "2026-11-07T06:54:49.431071+00:00",
     "images": [
       {
-        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a7-9feb-7edf-b5d2-586a04bcb0d1/ca51676c-6b95-44e8-806b-53cd735450d9.png"
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a190bc-2f30-722b-95d9-63b4a0d3f27b/cb4e944e-bb6d-4611-bc0f-6da68bfc46f2.png"
       }
     ]
   },
   "kaydedilen_dosya": "images/22.png",
-  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a7-9feb-7edf-b5d2-586a04bcb0d1/ca51676c-6b95-44e8-806b-53cd735450d9.png"
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a190bc-2f30-722b-95d9-63b4a0d3f27b/cb4e944e-bb6d-4611-bc0f-6da68bfc46f2.png"
 }

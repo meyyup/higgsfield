@@ -1,30 +1,30 @@
 {
   "id": "30",
   "kelime": "Hoşgörü",
-  "zaman": "2026-10-29T17:15:38",
-  "bitis": "2026-10-29T17:17:06",
+  "zaman": "2026-10-31T06:53:33",
+  "bitis": "2026-10-31T06:54:46",
   "model": "alibaba/qwen-image-3/text-to-image",
-  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. two speech bubbles of different colors with a small heart between them",
+  "prompt": "Vertical 9:16 illustration, warm children's picture book style, soft colored-pencil texture, one clear subject centered, simple warm background, no text, no letters, no logos, no realistic faces. two different children sitting together on a park bench, one talking with open hands and the other listening kindly with a warm smile, different clothes and hair, gentle afternoon light",
   "parametreler": {
     "resolution": "2k",
     "aspect_ratio": "9:16",
     "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
-    "seed": 4230
+    "seed": 7722
   },
-  "request_id": "01a188a8-ff70-74c0-93bb-302e35762fba",
+  "request_id": "01a190bc-2ee4-777c-a038-7c1783a5f791",
   "durum": "completed",
   "yanit": {
     "status": "completed",
-    "request_id": "01a188a8-ff70-74c0-93bb-302e35762fba",
-    "status_url": "https://api.higgsfield.ai/requests/01a188a8-ff70-74c0-93bb-302e35762fba/status",
-    "cancel_url": "https://api.higgsfield.ai/requests/01a188a8-ff70-74c0-93bb-302e35762fba/cancel",
-    "expires_at": "2026-11-05T17:16:50.898992+00:00",
+    "request_id": "01a190bc-2ee4-777c-a038-7c1783a5f791",
+    "status_url": "https://api.higgsfield.ai/requests/01a190bc-2ee4-777c-a038-7c1783a5f791/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a190bc-2ee4-777c-a038-7c1783a5f791/cancel",
+    "expires_at": "2026-11-07T06:54:39.524417+00:00",
     "images": [
       {
-        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a8-ff70-74c0-93bb-302e35762fba/861fd6be-7e66-4562-abfc-bbc2d414f9c5.png"
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a190bc-2ee4-777c-a038-7c1783a5f791/19d2258b-2d9b-4a88-9695-d58e0018f699.png"
       }
     ]
   },
   "kaydedilen_dosya": "images/30.png",
-  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a188a8-ff70-74c0-93bb-302e35762fba/861fd6be-7e66-4562-abfc-bbc2d414f9c5.png"
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a190bc-2ee4-777c-a038-7c1783a5f791/19d2258b-2d9b-4a88-9695-d58e0018f699.png"
 }
