@@ -1,0 +1,30 @@
+{
+  "id": "kapak_A",
+  "kelime": "Kapak",
+  "zaman": "2026-10-31T14:06:47",
+  "bitis": "2026-10-31T14:08:00",
+  "model": "alibaba/qwen-image-3/text-to-image",
+  "prompt": "Vertical illustration, warm children's picture book style, soft colored-pencil texture, no text, no letters, no logos, no realistic faces. A small child seen from behind sitting on a grassy hill at night, reading a large open glowing book on their lap; tiny golden sparks of light rise from the pages into a deep blue starry sky. The upper two thirds of the picture is calm, empty dark blue night sky with soft scattered stars, the hill and child occupy only the bottom third. Warm golden light from the book, gentle and magical.",
+  "parametreler": {
+    "resolution": "2k",
+    "aspect_ratio": "2:3",
+    "negative_prompt": "text, letters, words, numbers, writing, calligraphy, signature, watermark, logo, realistic human face, photo",
+    "seed": 3101
+  },
+  "request_id": "01a19248-d117-7fe9-8878-95233a99a5a7",
+  "durum": "completed",
+  "yanit": {
+    "status": "completed",
+    "request_id": "01a19248-d117-7fe9-8878-95233a99a5a7",
+    "status_url": "https://api.higgsfield.ai/requests/01a19248-d117-7fe9-8878-95233a99a5a7/status",
+    "cancel_url": "https://api.higgsfield.ai/requests/01a19248-d117-7fe9-8878-95233a99a5a7/cancel",
+    "expires_at": "2026-11-07T14:07:51.815576+00:00",
+    "images": [
+      {
+        "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a19248-d117-7fe9-8878-95233a99a5a7/61cb7ee9-8b4c-4bbf-8228-6db38804b24b.png"
+      }
+    ]
+  },
+  "kaydedilen_dosya": "cover/kapak_arka_A.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/9e1794ef-8335-47cd-b055-5ef73e4a6853/01a19248-d117-7fe9-8878-95233a99a5a7/61cb7ee9-8b4c-4bbf-8228-6db38804b24b.png"
+}
