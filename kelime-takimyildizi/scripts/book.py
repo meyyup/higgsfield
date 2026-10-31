@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Sözlüğün tamamı (A5, 40 sayfa): cover/sayfalar/PP.png + cards/Turkcenin_Yildizlari_sozluk_A5.pdf.
+"""Sözlüğün tamamı (A5, 41 sayfa): cover/sayfalar/PP.png + cards/Turkcenin_Yildizlari_sozluk_A5.pdf.
 
-Sıra: kapak · proje yazısı · nasıl kullanılır · içindekiler · [bölüm sayfası + 10 kart] × 3 ·
+Sıra: kapak · ithaf · proje yazısı · nasıl kullanılır · içindekiler · [bölüm sayfası + 10 kart] × 3 ·
 senin yıldızın · künye · arka kapak. Önce scripts/cover.py ve scripts/cards.py --to 30 çalıştırılmış olmalı.
 Künye bilgileri cover/kunye.txt'den (anahtar: değer), giriş videosu linki cover/giris_link.txt'den okunur.
 """
@@ -87,6 +87,26 @@ def heading(img, title, y=300, color=NAVY):
 
 
 # ---------------------------------------------------------------- sayfalar
+def p_ithaf():
+    """Kapaktan sonraki sayfa: kim, hangi proje, hangi yarışma için."""
+    img = paper_page()
+    d = ImageDraw.Draw(img)
+    cx = W // 2 + C.BIND // 2
+    for k, col in enumerate(CARD_COL.values()):
+        d.polygon(star_pts(cx + (k - 1) * 90, 860, 28, 11), fill=col)
+    parts = [("Bu sözlük", f_serif_i(72), INK), ("Mert Eyyüpoğlu", f_serif(104), NAVY),
+             ("tarafından", f_serif_i(72), INK), ("Dilimizin Zenginlikleri Projesi", f_serif(80), NAVY),
+             ("kapsamında", f_serif_i(72), INK), ("“Yaşayan Sözlük Tasarımı Yarışması”", f_serif(80), NAVY),
+             ("için yapılmıştır.", f_serif_i(72), INK)]
+    y = 1020
+    for text, f, col in parts:
+        d.text((cx, y), text, font=f, fill=col, anchor="mm")
+        y += 118 if f.size > 75 else 100
+    d.line([cx - 160, y + 20, cx + 160, y + 20], fill=GOLD_D, width=4)
+    C.star4(d, cx, y + 20, 18, GOLD_D)
+    return img
+
+
 def p_proje():
     img = paper_page()
     heading(img, "Türkçenin Yıldızları")
@@ -115,7 +135,7 @@ def p_proje():
     cx = W // 2 + C.BIND // 2
     for k, col in enumerate(CARD_COL.values()):
         d.polygon(star_pts(cx + (k - 1) * 110, H - 330, 34, 14), fill=col)
-    page_no(img, 2)
+    page_no(img, 3)
     return img
 
 
@@ -184,7 +204,7 @@ def p_nasil():
     for ln in wrap(d, note, fn, X1 - X0):
         d.text((X0, yy), ln, font=fn, fill=MUTED, anchor="lt")
         yy += 60
-    page_no(img, 3)
+    page_no(img, 4)
     return img
 
 
@@ -216,13 +236,13 @@ def p_icindekiler(rows, start):
                 x += 16
             d.text((cx + colw, cy), pg, font=fp, fill=MUTED, anchor="rm")
         y += 5 * 70 + 40
-    ext = [("Senin Yıldızın", 38), ("Künye ve Kaynaklar", 39)]
+    ext = [("Senin Yıldızın", 39), ("Künye ve Kaynaklar", 40)]
     y += 10
     for t, pg in ext:
         d.text((X0, y), t, font=f_serif_i(58), fill=NAVY, anchor="lm")
         d.text((X1, y), str(pg), font=f_serif(56), fill=MUTED, anchor="rm")
         y += 80
-    page_no(img, 4)
+    page_no(img, 5)
     return img
 
 
@@ -305,7 +325,7 @@ def p_senin():
         y += 70
     f = f_serif_i(52)
     d.text((W // 2, H - 150), "Yaşayan bir sözlük büyümeye devam eder.", font=f, fill=MUTED, anchor="mm")
-    page_no(img, 38)
+    page_no(img, 39)
     return img
 
 
@@ -348,7 +368,7 @@ def p_kunye():
             d.text((X0, y), ln, font=fb, fill=INK, anchor="ls")
             y += 66
         y += 40
-    page_no(img, 39)
+    page_no(img, 40)
     return img
 
 
@@ -381,8 +401,8 @@ def card_page(nn, page):
 def main():
     rows = list(csv.DictReader((ROOT / "kelimeler.csv").open(encoding="utf-8")))
     words = {c: [r["kelime"] for r in rows if r["kategori"] == c] for c in C.CATS}
-    start = {"Kültürümüz": 5, "Eski Sözcükler": 16, "Değerler": 27}
-    pages = [Image.open(ROOT / "cover" / "kapak_A5.png").convert("RGBA"), p_proje(), p_nasil(),
+    start = {"Kültürümüz": 6, "Eski Sözcükler": 17, "Değerler": 28}
+    pages = [Image.open(ROOT / "cover" / "kapak_A5.png").convert("RGBA"), p_ithaf(), p_proje(), p_nasil(),
              p_icindekiler(rows, start)]
     for no, cat in enumerate(C.CATS, 1):
         pages.append(p_bolum(cat, words[cat], no, start[cat]))
@@ -390,7 +410,7 @@ def main():
             if r["kategori"] == cat:
                 pages.append(card_page(r["id"], len(pages) + 1))
     pages += [p_senin(), p_kunye(), p_arka()]
-    assert len(pages) == 40, len(pages)
+    assert len(pages) == 41, len(pages)
     outd = ROOT / "cover" / "sayfalar"
     outd.mkdir(parents=True, exist_ok=True)
     jd = ROOT / "work" / "book_jpg"
